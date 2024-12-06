@@ -1,3 +1,53 @@
-h1{
+.home-hero{
+    width: 1240px;
+    height: 467px;
+    border-radius: 30px;
+    background-image: url(../../assets/slider-2.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 12px;
+    padding-top: 70px;
+    padding-left: 75px;
+}
+.ama-txt{
+    font-size: 48px;
+    line-height: 80px;
+    color: rgb(37,61,78);
+}
+.home-hero h3{
+    font-size: 25px;
+    margin-top: 20px;
+    color: rgb(126,126,126);
+}
+.send-icon{
+    color: rgb(146,146,146);
     font-size: 20px;
+}
+.input-btn{
+    width: 450px;
+    height: 64px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.input-btn input{
+    border-color: transparent;
+    font-size: 15px;
+    height: 64px;
+    outline: none;
+}
+.input-btn button{
+    width: 157.542px;
+    height: 64px;
+    background-color: rgb(59, 183, 126);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 16px;
+
 }

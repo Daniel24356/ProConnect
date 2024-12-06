@@ -1,0 +1,202 @@
+.zerd-img{
+    width: 160px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+    margin-left: 12px;
+}
+.thr-head{
+    display: flex;
+    gap: 20px;
+}
+.head-inner{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.search-div{
+    width: 589.229px;
+    height: 54px;
+    border: 2px solid rgb(188, 227, 201);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.cat-txt{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-right: 8px;
+}
+.cat-div{
+    padding-left: 20px;
+    padding-right: 16px;
+    border-right: 2px solid  rgb(202,202,202);
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.drop-icon{
+    font-size: 25px;
+    color: rgb(146,155,165);
+}
+.search-head{
+    border: transparent;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+}
+.s-inner{
+    display: flex;
+    gap: 190px;
+}
+.search-icon{
+    font-size: 24px;
+    color: rgb(146,155,165);
+}
+.s-icons{
+    font-size: 25px;
+}
+.thr-head div p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(150, 137, 136);
+}
+.thr-head div{
+    display: flex;
+    align-items: baseline;
+}
+.com{
+    position: relative;
+}
+.three{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(59, 183, 126);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 3px;
+    top: -7px;
+    left: 16px;
+}
+.wish{
+    position: relative;
+}
+.six{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(59, 183, 126);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 3px;
+    top: -7px;
+    left: 16px;
+}
+.carts{
+    position: relative;
+}
+.two{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(59, 183, 126);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 3px;
+    top: -7px;
+    left: 16px;
+}
+
+.browse-cat{
+    height: 44px;
+    width: 234px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(59,183,126);
+    border-radius: 5px;
+}
+.drop-icons{
+    font-size: 25px;
+    color: white;
+}
+.fire-icon{
+    font-size: 20px;
+    color:rgb(59,183,126) ;
+}
+.s-icon{
+    font-size: 20px;
+    color: white;
+}
+.phone-icon{
+    font-size: 45px;
+}
+.browse-cat p{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.brow-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-left: 12px;
+    margin-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    margin-right: 15px;
+}
+.brow-new{
+    display: flex;
+    gap: 46px;
+}
+.brow-sec{
+    display: flex;
+    gap: 15px;
+}
+.brow-sec div{
+    display: flex;
+    align-items: center;
+}
+.brow-sec div p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.p-brow{
+    display: flex;
+}
+.p-brow div h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(59,183,126);
+}
+.p-brow div p{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(138,146,151);
+}
