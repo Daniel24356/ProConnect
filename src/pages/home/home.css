@@ -60,6 +60,7 @@
 .categories {
     padding-top: 100px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .each {
@@ -90,6 +91,7 @@
     border-radius: 10px;
     width: 178px;
     transition: 0.3s;
+    height: 216px;
 }
 
 .fruit {
@@ -107,4 +109,52 @@
     border: #f4f4f4 1px solid;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.prev-arrow, .next-arrow {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s;
+}
+
+.icon {
+    font-size: 20px;
+    color: grey;
+}
+
+.icon:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.prev-arrow:hover {
+     cursor: pointer;
+     background-color: #3BB77E;
+     color: white;
+}
+
+.next-arrow:hover {
+    cursor: pointer;
+    background-color: #3BB77E;
+    color: white;
+}
+
+.arrows-div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.scrolling-div {
+    padding-top: 38px;
+    display: flex;
+    gap: 23px;
 }
