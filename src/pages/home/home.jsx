@@ -13,7 +13,18 @@
     import pet from '../../assets/pet.svg';
     import packages from '../../assets/package.svg';
     import baking from '../../assets/baking.svg';
+    import carrot from '../../assets/carrot.jpg';
+    import pepper from '../../assets/pepper.jpg';
+    import mango from '../../assets/mango.jpg';
+    import banana from '../../assets/banana.jpg';
+    import watermelon from '../../assets/watermelon.jpg';
+    import kiwi from '../../assets/kiwi.jpg';
+    import raw from '../../assets/raw.jpg';
+    import sachet from '../../assets/sachet.jpg';
+    import corn from '../../assets/corn.jpg';
+    import pomegranate from '../../assets/pomegranate.jpg';
     import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
+    import { useState } from 'react';
 
     // Swiper imports
     import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,6 +33,11 @@
     import { Navigation, Autoplay } from 'swiper/modules';
 
     const Home = () => {
+        const [rating, setRating] = useState(0); // Store the rating
+
+  const handleRating = (rate) => {
+    setRating(rate); // Update the rating state
+  };
         return (
             <>
                 <Header />
@@ -147,6 +163,248 @@
                         </SwiperSlide>
                     </Swiper>
                     
+                </section>
+
+                <section className="trending-shi">
+                     <div className="selling">
+                        <h1 className="top">Top Selling</h1>
+                        <div className="products">
+                            <a href="" className="carrot"><img src={carrot} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={pepper} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={mango} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div className="selling">
+                        <h1 className="top">Trending Products</h1>
+                        <div className="products">
+                            <a href="" className="carrot"><img src={banana} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Organic Cage-Free Grade A Large Brown Eggs</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={watermelon} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={kiwi} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div className="selling">
+                        <h1 className="top">Recently Added</h1>
+                        <div className="products">
+                            <a href="" className="carrot"><img src={raw} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Pepperidge Farm FarmHouse Hearty White Bread</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={sachet} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Organic Frozen Triple Berry Blend</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={corn} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Oroweat Country ButterMilk Bread</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div className="selling">
+                        <h1 className="top">Top Rated</h1>
+                        <div className="products">
+                            <a href="" className="carrot"><img src={pomegranate} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={pepper} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+
+                        <div className="products">
+                            <a href="" className="carrot"><img src={mango} alt="" className="carrot-pic" /></a>
+                            <div className="more-info">
+                                <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                <div className="star-rating">
+                                    {[...Array(5)].map((_, index) => (
+                                       <span
+                                        key={index}
+                                          className={index < rating ? "star filled" : "star"}
+                                             onClick={() => handleRating(index + 1)} // Set rating on click
+                                                  >
+                                                  ★
+                                                    </span>
+                                                       ))}
+                                  </div>
+                               <p className="price">$32.85</p>
+                            </div>
+                        </div>
+                     </div>
                 </section>
             </>
         );
