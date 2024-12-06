@@ -1,6 +1,8 @@
 import Header from './header'
 import './home.css'
 import { FiSend } from "react-icons/fi";
+import { BsChevronRight } from "react-icons/bs";
+import fruit from '../../assets/fruits.svg'
 
 const Home = () => {
     return (
@@ -107,6 +109,20 @@ const Home = () => {
                 <button>Shop Now</button>
             </div>
         </section> */}
+
+        <section className="categories">
+           <div className="uppercategory">
+           <h1 className='each'>Shop by Categories</h1>
+           <a href="" className="all">All Categories <BsChevronRight/></a>
+           </div>
+
+           <div className="scrolling-div">
+            <div className="each-div">
+                <a href="" className="eachdiv"><img src={fruit} alt="" className='fruit'/></a>
+                <a href="" className="description">Vegetables <br></br> & tubers</a>
+            </div>
+           </div>
+        </section>
         </>
     )
 }
