@@ -164,6 +164,8 @@
     padding-right: 10px;
     padding-top: 120px;
     width: 100%;
+    display: flex;
+    gap: 20px;
 }
 
 .top {
@@ -239,4 +241,115 @@
     font-weight: bold;
     font-size: 19px;
     padding-top: 20px;
+  }
+
+  .tags {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    display: flex;
+    gap: 25px;
+  }
+
+  .each-tag {
+    background-color: #F4F6FA;
+    width: 20%;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .best {
+    font-size: 18px;
+    font-weight: bold;
+    color: #242424;
+  }
+
+  .orders {
+    color: #adadad;
+    padding-top: 5px;
+  }
+
+  .move {
+    transform: transition 0.5s ease;
+    transition: 0.5s;
+  }
+
+  .move:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+
+  .contact {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+  }
+
+  .awesome {
+    font-size: 17px;
+    color: #242424;
+    padding-top: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  .location {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3BB77E;
+  }
+
+  .idk {
+    font-weight: bold;
+  }
+
+  .address-info {
+    color: #242424;
+    font-weight: 500;
+  }
+
+  .info-div {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .install {
+    font-size: 27px;
+    color: #242424;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .download {
+    color: #242424;
+    font-weight: 500;
+  }
+
+  .apple-pic {
+    width: 150px;
+  }
+
+  .download-links {
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+  }
+
+  .apple-link:hover {
+      transform: translateY(-10px);
+      transition: 0.4s;
+  }
+
+  .apple-link {
+    transition: 0.4s;
+  }
+
+  .gateway {
+    padding-top: 60px;
+    color: #242424;
+    font-weight: 500;
   }

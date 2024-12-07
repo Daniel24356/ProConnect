@@ -23,8 +23,22 @@
     import sachet from '../../assets/sachet.jpg';
     import corn from '../../assets/corn.jpg';
     import pomegranate from '../../assets/pomegranate.jpg';
+    import pear from '../../assets/pear.jpg';
+    import orange from '../../assets/orange.jpg';
+    import tag from '../../assets/tag.svg';
+    import shake from '../../assets/shake.svg';
+    import contract from '../../assets/contract.svg';
+    import man from '../../assets/man.svg';
+    import box from '../../assets/box.svg';
+    import zerd from '../../assets/zerds.png';
+    import apple from '../../assets/apple.jpg';
+    import google from '../../assets/google.jpg';
     import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
     import { useState } from 'react';
+    import { CiLocationOn } from "react-icons/ci";
+    import { TfiHeadphoneAlt } from "react-icons/tfi";
+    import { FaRegPaperPlane } from "react-icons/fa";
+    import { FaRegClock } from "react-icons/fa6";
 
     // Swiper imports
     import { Swiper, SwiperSlide } from 'swiper/react';
@@ -43,7 +57,7 @@
                 <Header />
                 <section className='home-hero'>
                     <div className='ama-txt'>
-                        <h1>Don't Miss Amazing</h1>
+                        <h1>Don&apos;t Miss Amazing</h1>
                         <h1>Grocery Deals</h1>
                     </div>
                     <h3>Save up to 50% off On your first Order</h3>
@@ -368,9 +382,9 @@
                         </div>
 
                         <div className="products">
-                            <a href="" className="carrot"><img src={pepper} alt="" className="carrot-pic" /></a>
+                            <a href="" className="carrot"><img src={pear} alt="" className="carrot-pic" /></a>
                             <div className="more-info">
-                                <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                <a href="" className="nestle">Angies Boomchikapop Sweet & Salty Kettle Corn</a>
                                 <div className="star-rating">
                                     {[...Array(5)].map((_, index) => (
                                        <span
@@ -387,7 +401,7 @@
                         </div>
 
                         <div className="products">
-                            <a href="" className="carrot"><img src={mango} alt="" className="carrot-pic" /></a>
+                            <a href="" className="carrot"><img src={orange} alt="" className="carrot-pic" /></a>
                             <div className="more-info">
                                 <a href="" className="nestle">Nestle Original Coffee-Mate Coffee Creamer</a>
                                 <div className="star-rating">
@@ -405,6 +419,90 @@
                             </div>
                         </div>
                      </div>
+                </section>
+
+                <section className="tags">
+                    <div className="each-tag">
+                        <img src={tag} alt="" className="move" />
+                        <div className="each-text">
+                            <p className="best">Best Prices and Offers</p>
+                            <p className="orders">Order $50 or more</p>
+                        </div>
+                    </div>
+
+                    <div className="each-tag">
+                        <img src={shake} alt="" className="move" />
+                        <div className="each-text">
+                            <p className="best">Free delivery</p>
+                            <p className="orders">24/7 amazing services</p>
+                        </div>
+                    </div>
+
+                    <div className="each-tag">
+                        <img src={contract} alt="" className="move" />
+                        <div className="each-text">
+                            <p className="best">Great daily deal</p>
+                            <p className="orders">When you sign up</p>
+                        </div>
+                    </div>
+
+                    <div className="each-tag">
+                        <img src={man} alt="" className="move" />
+                        <div className="each-text">
+                            <p className="best">Wide assortment</p>
+                            <p className="orders">Mega Discounts</p>
+                        </div>
+                    </div>
+
+                    <div className="each-tag">
+                        <img src={box} alt="" className="move" />
+                        <div className="each-text">
+                            <p className="best">Easy returns</p>
+                            <p className="orders">Within 30 days</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="contact">
+                    <div className="topcontact">
+                        <div className="leftdiv">
+                            <a href="" className="logo"><img src={zerd} alt="" width={"200px"}/></a>
+                            <p className="awesome">Awesome grocery store website template</p>
+                            <div className="info-div">
+                            <CiLocationOn className='location'/>
+                            <p className="address-info"><span className="idk">Address:</span> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+                            </div>
+
+                            <div className="info-div">
+                            <TfiHeadphoneAlt className='location'/>
+                            <p className="address-info"><span className="idk">Call Us: </span>(+91) - 540-025-124553</p>
+                            </div>
+
+                            <div className="info-div">
+                            <FaRegPaperPlane className='location'/>
+                            <p className="address-info"><span className="idk">Email: </span>sale@Nest.com</p>
+                            </div>
+
+                            <div className="info-div">
+                            <FaRegClock className='location'/>
+                            <p className="address-info"><span className="idk">Hours: </span>10:00 - 18:00, Mon - Sat</p>
+                            </div>
+
+                            <h1 className="install">Install App</h1>
+
+                            <div className="download">From App Store or Google Play</div>
+
+                            <div className="download-links">
+                                <a href="" className="apple-link"><img src={apple} alt="" className="apple-pic" /></a>
+                                <a href="" className="apple-link"><img src={google} alt="" className="apple-pic" /></a>
+                            </div>
+
+                            <p className="gateway">Secured Payment Gateways</p>
+                            <div className="payments">
+                                <img src="" alt="" className="visa" />
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </>
         );
