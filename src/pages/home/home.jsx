@@ -33,6 +33,7 @@
     import zerd from '../../assets/zerds.png';
     import apple from '../../assets/apple.jpg';
     import google from '../../assets/google.jpg';
+    import visa from '../../assets/visa.png';
     import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
     import { useState } from 'react';
     import { CiLocationOn } from "react-icons/ci";
@@ -498,8 +499,60 @@
                             </div>
 
                             <p className="gateway">Secured Payment Gateways</p>
-                            <div className="payments">
-                                <img src="" alt="" className="visa" />
+                            <img src={visa} alt="" className="visa" />
+                        </div>
+
+                        <div className="rightdiv">
+                            <div className="each-stress">
+                                <h1 className="company">Company</h1>
+                                <div className="all-links">
+                                    <a href="" className="about-us">About Us</a>
+                                    <a href="" className="about-us">Delivery Information</a>
+                                    <a href="" className="about-us">Privacy Policy</a>
+                                    <a href="" className="about-us">Terms & Conditions</a>
+                                    <a href="" className="about-us">Contact Us</a>
+                                    <a href="" className="about-us">Support Center</a>
+                                    <a href="" className="about-us">Careers</a>
+                                </div>
+                            </div>
+
+                            <div className="each-stress">
+                                <h1 className="company">Account</h1>
+                                <div className="all-links">
+                                    <a href="" className="about-us">Sign In</a>
+                                    <a href="" className="about-us">View Chart</a>
+                                    <a href="" className="about-us">My Wishlist</a>
+                                    <a href="" className="about-us">Track My Order</a>
+                                    <a href="" className="about-us">Help Ticket</a>
+                                    <a href="" className="about-us">Shipping Details</a>
+                                    <a href="" className="about-us">Compare Products</a>
+                                </div>
+                            </div>
+
+                            <div className="each-stress">
+                                <h1 className="company">Corporate</h1>
+                                <div className="all-links">
+                                    <a href="" className="about-us">Become a Vendor</a>
+                                    <a href="" className="about-us">Affiliate Program</a>
+                                    <a href="" className="about-us">Farm Bsuiness</a>
+                                    <a href="" className="about-us">Farm Careers</a>
+                                    <a href="" className="about-us">Our Suppliers</a>
+                                    <a href="" className="about-us">Accessibility</a>
+                                    <a href="" className="about-us">Promotions</a>
+                                </div>
+                            </div>
+
+                            <div className="each-stress">
+                                <h1 className="company">Popular</h1>
+                                <div className="all-links">
+                                    <a href="" className="about-us">Milk & Flavored Milk</a>
+                                    <a href="" className="about-us">Butter and Margarine</a>
+                                    <a href="" className="about-us">Eggs Substitute</a>
+                                    <a href="" className="about-us">Marmalades</a>
+                                    <a href="" className="about-us">Sour Cream & Dips</a>
+                                    <a href="" className="about-us">Tea & Kombucha</a>
+                                    <a href="" className="about-us">Cheese</a>
+                                </div>
                             </div>
                         </div>
                     </div>

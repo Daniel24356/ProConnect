@@ -353,3 +353,49 @@
     color: #242424;
     font-weight: 500;
   }
+
+  .visa {
+    padding-top: 20px;
+  }
+
+  .company {
+    font-size: 29px;
+    color: #253D4E;
+    padding-bottom: 25px;
+  }
+
+  .about-us {
+    text-decoration: none;
+    color: #242424;
+    font-weight: 500;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .about-us:hover {
+    color: #3BB77E;
+    transform: translateX(10px);    
+    transition: 0.4s;
+  }
+
+  .all-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .rightdiv {
+    display: flex;
+    gap: 200px;
+  }
+
+  .topcontact {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .leftdiv {
+    width: 20%;
+  }
