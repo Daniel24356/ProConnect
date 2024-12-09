@@ -10,6 +10,7 @@
   import { FaFireAlt } from "react-icons/fa";
   import { AiOutlineAppstore } from "react-icons/ai";
 
+
   const Header = () => {
      return (
         <>
