@@ -1051,4 +1051,400 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 350px;
     height: 170px;
+ }
+.all {
+    color: grey;
+    text-decoration: none;
+}
+
+.categories {
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.each {
+    font-size: 32px;
+    color: #253D4E;
+}
+
+.uppercategory {
+    display: flex;
+    align-items: end;
+    gap: 40px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #253D4E;
+}
+
+.each-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F4F6FA;
+    padding: 35px;
+    border-radius: 10px;
+    width: 178px;
+    transition: 0.3s;
+    height: 216px;
+}
+
+.fruit {
+    padding-left: 15px;
+}
+
+
+.description:hover {
+    color: #3BB77E;
+    transition: 0.3s;
+}
+
+.each-div:hover {
+    background-color: white;
+    border: #f4f4f4 1px solid;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.prev-arrow, .next-arrow {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s;
+}
+
+.icon {
+    font-size: 20px;
+    color: grey;
+}
+
+.icon:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.prev-arrow:hover {
+     cursor: pointer;
+     background-color: #3BB77E;
+     color: white;
+}
+
+.next-arrow:hover {
+    cursor: pointer;
+    background-color: #3BB77E;
+    color: white;
+}
+
+.arrows-div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.scrolling-div {
+    padding-top: 38px;
+    display: flex;
+    gap: 23px;
+}
+
+.trending-shi {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 120px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.top {
+    font-size: 30px;
+    color: #253D4E;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 20px;
+}
+
+.selling {
+    width: 25%;
+}
+
+.carrot {
+    width: 30%;
+}
+
+.carrot-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.products {
+    padding-top: 25px;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.products:hover {
+    transform: translateY(-10px);
+}
+
+.nestle {
+    font-weight: bold;
+    font-size: 20px;
+    color: #253D4E;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nestle:hover {
+    color: #3BB77E;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px; /* Space between stars and text */
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 20px; /* Adjust the size of stars */
+    color: #d3d3d3; /* Default gray color */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star.filled {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
+  .star:hover,
+  .star.filled:hover ~ .star {
+    color: #ffa500; /* Orange on hover */
+  }
+
+  .price {
+    color: #3BB77E;
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 20px;
+  }
+
+  .tags {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    display: flex;
+    gap: 25px;
+  }
+
+  .each-tag {
+    background-color: #F4F6FA;
+    width: 20%;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .best {
+    font-size: 18px;
+    font-weight: bold;
+    color: #242424;
+  }
+
+  .orders {
+    color: #adadad;
+    padding-top: 5px;
+  }
+
+  .move {
+    transform: transition 0.5s ease;
+    transition: 0.5s;
+  }
+
+  .move:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+
+  .contact {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+  }
+
+  .awesome {
+    font-size: 17px;
+    color: #242424;
+    padding-top: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  .location {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3BB77E;
+  }
+
+  .idk {
+    font-weight: bold;
+  }
+
+  .address-info {
+    color: #242424;
+    font-weight: 500;
+  }
+
+  .info-div {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .install {
+    font-size: 27px;
+    color: #242424;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .download {
+    color: #242424;
+    font-weight: 500;
+  }
+
+  .apple-pic {
+    width: 150px;
+  }
+
+  .download-links {
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+  }
+
+  .apple-link:hover {
+      transform: translateY(-10px);
+      transition: 0.4s;
+  }
+
+  .apple-link {
+    transition: 0.4s;
+  }
+
+  .gateway {
+    padding-top: 60px;
+    color: #242424;
+    font-weight: 500;
+  }
+
+  .visa {
+    padding-top: 20px;
+  }
+
+  .company {
+    font-size: 29px;
+    color: #253D4E;
+    padding-bottom: 25px;
+  }
+
+  .about-us {
+    text-decoration: none;
+    color: #242424;
+    font-weight: 500;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .about-us:hover {
+    color: #3BB77E;
+    transform: translateX(10px);    
+    transition: 0.4s;
+  }
+
+  .all-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .rightdiv {
+    display: flex;
+    gap: 200px;
+  }
+
+  .topcontact {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #adadad;
+  }
+
+  .leftdiv {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 1415px){
+       .trending-shi {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+       }
+
+       .selling {
+        width: 100%;
+       }
+  }
+
+  @media screen and (max-width: 1400px){
+       .rightdiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       }
+
+       .topcontact {
+          gap: 500px;
+       }
+
+  }
+
+
+  @media screen and (max-width: 1303px){
+     .tags {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+     }
+
+     .each-tag {
+        width: 100%;
+     }
+  }
+
+  @media screen and (max-width: 1222px){
+       .topcontact {
+          flex-direction: column;
+          gap: 50px;
+       }
+
+       .leftdiv {
+        width: 100%;
+       }
   }
