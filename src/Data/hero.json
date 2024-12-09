@@ -1,0 +1,18 @@
+{
+    "slides":[
+        {
+          "src": "https://nest.botble.com/storage/sliders/1-1.png",
+          "alt": "Image 1 for carousel",
+          "text1": "Dont Miss Amazing",
+          "text2": "Grocery Deals",
+          "text3": "Sign up for the daily newsletter"
+        },
+        {
+            "src": "https://nest.botble.com/storage/sliders/1-2.png",
+          "alt": "Image 2 for carousel",
+          "text1": "Fresh Vegetables",
+          "text2": "Big discount",
+          "text3": "Save up to 50% off On your first Order"
+          }
+       ] 
+       }

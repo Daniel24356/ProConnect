@@ -1,22 +1,39 @@
+.carou{
+    position: relative;
+    height: 467px;
+    width: 100%;
+}
 .home-hero{
     width: 1240px;
     height: 467px;
     border-radius: 30px;
-    background-image: url(../../assets/slider-2.png);
+    /* background-image: url(../../assets/slider-2.png); */
     background-size: cover;
     background-position: center;
     margin-top: 30px;
     margin-left: 12px;
     padding-top: 70px;
     padding-left: 75px;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+.home-hero.active {
+    z-index: 2; /* Bring the active slide to the front */
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal scale */
+  }
+  
+  .home-hero:not(.active) {
+    z-index: 1; /* Keep inactive slides in the background */
+    transform: scale(1); /* Optional subtle scaling for inactive slides */
+  }
 .ama-txt{
-    font-size: 48px;
+    font-size: 44px;
     line-height: 80px;
     color: rgb(37,61,78);
 }
 .home-hero h3{
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 20px;
     color: rgb(126,126,126);
 }
@@ -26,28 +43,242 @@
 }
 .input-btn{
     width: 450px;
-    height: 64px;
+    height: 54px;
     border-radius: 50px;
     background-color: white;
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .input-btn input{
+    width: 225px;
     border-color: transparent;
-    font-size: 15px;
-    height: 64px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 54px;
     outline: none;
 }
 .input-btn button{
     width: 157.542px;
-    height: 64px;
+    height: 54px;
     background-color: rgb(59, 183, 126);
     border-radius: 50px;
     border: none;
     color: white;
     font-size: 16px;
-
+    font-weight: 600;
+}
+.right-btn{
+    display: none;
+ }
+ .right-btn:hover{
+    background-color:rgb(59, 183, 126);
+     cursor: pointer;
+     color: white;
+ }
+ .left-btn{
+    display: none;
+ }
+ .arrow-dir{
+     font-size: 20px;
+     
+ }
+ .left-btn:hover{
+    background-color:rgb(59, 183, 126);
+    cursor: pointer;
+    color: white;
+ }
+.home-hero:hover .right-btn{
+    position: absolute;
+    top: 210px;
+    left: 1rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    z-index: 1;
+} 
+.home-hero:hover .left-btn{
+    position: absolute;
+    top: 210px;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+}
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute; /* Position them at the bottom of the container */
+    bottom: 20px; /* Adjust based on the container's height */
+    left: 50%;
+    transform: translateX(-50%); /* Center the indicators horizontally */
+    z-index: 10; /* Ensure they appear above other content */
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(200, 200, 200, 0.7); /* Default color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active {
+    background-color: rgb(59, 183, 126); /* Active slide color */
+  }
+  
+  .indicator:hover {
+    background-color: rgba(59, 183, 126, 0.8); /* Hover color */
+  }
+.fruits-indiv{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(242, 252, 228);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivs{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(255, 252, 235);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(236, 255, 236);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivsss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(254, 239, 234);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivssss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(255, 243, 235);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivsssss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(255, 243, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivssssss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(255, 243, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivsssssss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(255, 252, 235);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivssssssss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(236, 255, 236);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.fruits-indivsssssssss{
+    height: 183.33px;
+    width: 103px;
+    background-color: rgb(254, 239, 234);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top:20px;
+    flex-direction: column;
+}
+.cabbage-img{
+    width: 80px;
+}
+.tp-cat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow-cnt{
+    display: flex;
+    gap: 13px;
+}
+.arw-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(242,243,244);
+}
+.arrw-long{
+    color: rgb(126,126,126);
+}
+.fruit-name{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 22px;
+}
+.fruit-items{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 2px;
+}
+.fruit-div{
+    display: flex;
+    gap: 23px;
+    margin-top: 50px;
+}
+.top-cate{
+    margin-left: 12px;
+    margin-top: 60px;
+    margin-right: 17px;
 }

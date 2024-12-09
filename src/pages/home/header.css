@@ -1,15 +1,155 @@
+.top-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid gainsboro;
+    padding-left: 12px;
+    padding-right: 23px;
+}
+.top-div .top-need p{
+    font-size: 13.7px;
+    font-weight: 600;
+    color: rgb(122, 121, 120);
+}
+.n-txt{
+    color: rgb(102,187,141);
+}
+.ab-txt{
+    padding-right: 9px;
+    border-right: 1px solid rgb(134, 132, 132);
+    height: 10px;
+    display: flex;
+    align-items: center;
+}
+.trck-txt{
+    padding-left: 9px;
+}
+.trend-bx{
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+/* .trend-bx p span{
+     white-space: nowrap;
+}
+.rotating-text-container {
+    width: 300px; 
+    height: 40px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.rotating-text {
+    position: absolute;
+    top: 30;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    animation: rotateText 6s infinite ease-in-out; 
+}
+
+.text {
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px; 
+    height: 50px;
+}
+
+@keyframes rotateText {
+    0% { transform: translateY(0); }
+    33% { transform: translateY(-50px); } 
+    66% { transform: translateY(-100px); } 
+    100% { transform: translateY(0); }
+} */
+
+.not-icon{
+    font-size: 19px;
+    color: rgb(122, 121, 120);
+}
+.top-div .trend-bx p{
+    font-size: 13.7px;
+}
+.nig-flag{
+    width: 25px;
+    height: 25px;
+}
+.t-txt{
+    /* font-size: 13px; */
+    color: rgb(155,194,122);
+    padding-right: 5px;
+    font-weight: 700;
+}
+.silver-txt{
+    color: rgb(122, 120, 120);
+    font-weight: 700;
+}
+.shop-txt{
+    color: rgb(102,187,141);
+    font-weight: 700;
+    padding-left: 4px;
+}
+.top-need{
+    display: flex;
+    align-items: center;
+}
+.need-txt{
+    padding-right: 4px;
+}
+.call-txt{
+    padding-right:7px;
+    border-right: 1px solid gainsboro;
+}
+.eng-div{
+    padding-left: 7px;
+    padding-right: 13px;
+    border-right: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.usd-div{
+    padding-left: 7px;
+}
+.order-track{
+    display: flex;
+    align-items: center;
+}
+.top-div .order-track p{
+    font-size: 13.7px;
+    font-weight: 600;
+    color: rgb(122, 121, 120);
+}
 .zerd-img{
     width: 160px;
 }
-nav{
+.header{
     display: flex;
     align-items: center;
     gap: 73px;
-    margin-left: 12px;
+    padding-left: 12px;
+    padding-top: 15px;
+    width: 100%;
+    background-color: white; /* Adjust as needed */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: top 0.3s ease; /* Smooth slide-in effect */
+    z-index: 1000; 
+    /* position: absolute;  */
+    top: -100px; /* Initially hidden */
+}
+.header.fixed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    position: fixed; /* Fixed state */
+    top:0;
+    padding-top: 0;
 }
 .thr-head{
     display: flex;
-    gap: 20px;
+    gap: 27px;
 }
 .head-inner{
     display: flex;
@@ -29,11 +169,12 @@ nav{
     font-weight: 700;
     line-height: 50px;
     margin-right: 8px;
+    white-space: nowrap;
 }
 .cat-div{
     padding-left: 20px;
     padding-right: 16px;
-    border-right: 2px solid  rgb(202,202,202);
+    border-right: 1px solid  rgb(202,202,202);
     height: 25px;
     display: flex;
     align-items: center;
@@ -51,11 +192,11 @@ nav{
 }
 .s-inner{
     display: flex;
-    gap: 190px;
+    gap: 210px;
 }
 .search-icon{
     font-size: 24px;
-    color: rgb(146,155,165);
+    color: rgb(59, 183, 126);
 }
 .s-icons{
     font-size: 25px;
@@ -65,12 +206,14 @@ nav{
     font-weight: 400;
     color: rgb(150, 137, 136);
 }
-.thr-head div{
+/* .thr-head div{
     display: flex;
     align-items: baseline;
-}
+} */
 .com{
     position: relative;
+    display: flex;
+    align-items: baseline;
 }
 .three{
     position: absolute;
@@ -84,12 +227,13 @@ nav{
     color: white;
     font-size: 12px;
     font-weight: 500;
-    padding-top: 3px;
     top: -7px;
     left: 16px;
 }
 .wish{
     position: relative;
+    display: flex;
+    align-items: baseline;
 }
 .six{
     position: absolute;
@@ -103,12 +247,13 @@ nav{
     color: white;
     font-size: 12px;
     font-weight: 500;
-    padding-top: 3px;
     top: -7px;
     left: 16px;
 }
 .carts{
     position: relative;
+    display: flex;
+    align-items: baseline;
 }
 .two{
     position: absolute;
@@ -122,11 +267,13 @@ nav{
     color: white;
     font-size: 12px;
     font-weight: 500;
-    padding-top: 3px;
     top: -7px;
     left: 16px;
 }
-
+.acc{
+    display: flex;
+    align-items: baseline;
+}
 .browse-cat{
     height: 44px;
     width: 234px;
@@ -135,6 +282,10 @@ nav{
     justify-content: center;
     background-color: rgb(59,183,126);
     border-radius: 5px;
+    position: relative;
+}
+.browse-cat:hover{
+    cursor: pointer;
 }
 .drop-icons{
     font-size: 25px;
@@ -163,13 +314,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 35px;
-    margin-left: 12px;
+    padding-left: 12px;
     margin-top: 20px;
     padding-top: 13px;
     padding-bottom: 13px;
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
-    margin-right: 15px;
+    padding-right: 15px;
 }
 .brow-new{
     display: flex;
@@ -177,15 +328,24 @@ nav{
 }
 .brow-sec{
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 27px;
+    position: relative;
 }
-.brow-sec div{
+.br-inner{
     display: flex;
     align-items: center;
 }
 .brow-sec div p{
     font-size: 16px;
     font-weight: 700;
+}
+.home-sp{
+    padding-right: 12px; 
+}
+.brow-sec div p:hover{
+    cursor: pointer;
+    color:rgb(59,183,126)
 }
 .p-brow{
     display: flex;
@@ -199,4 +359,126 @@ nav{
     font-size: 12px;
     font-weight: 500;
     color: rgb(138,146,151);
+}
+.shop{
+    /* display: flex; */
+} 
+.shop-inner{
+    display: flex;
+    align-items: center;
+    /* transition: shop-side 10.15s,shop-sides 10.15s; */
+}
+.shop-side{
+    display: none; 
+    opacity: 0;
+    /* pointer-events: none;  */
+    transition: opacity 0.5s ease-in-out;     
+}
+.shop:hover .shop-side p{
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+}
+.shop:hover .shop-side p:hover{
+    color:rgb(59,183,126);
+}
+.shop:hover .drop-icon{
+    color:rgb(59,183,126);
+    cursor: pointer;
+}
+.shop:hover .shop-inner p{
+    color:rgb(59,183,126);
+    cursor: pointer;
+}
+.shop:hover .shop-side{
+    display: flex;
+    width: 250px;
+    height: 170px;
+    opacity: 1; /* Make visible */
+    pointer-events: auto; /* Allow interaction when visible */
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px 1px gainsboro;
+    gap:15px;
+    padding-top: 25px;
+    /* padding-bottom: 7px; */
+    padding-left: 30px;
+    /* padding-right: 21px; */
+    position: absolute;
+    top: 0;
+    background-color: white;
+    margin-top: 65px;
+    z-index: 100;
+}
+.shop-sides{
+    display: none; 
+}
+.shop:hover .shop-sides p{
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+}
+.shop:hover .shop-sides{
+    display: flex;
+    width: 250px;
+    height: 130px;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px 1px gainsboro;
+    gap:17px;
+    padding-top: 25px;
+    /* padding-bottom: 7px; */
+    padding-left: 30px;
+    /* padding-right: 21px; */
+    position: absolute;
+    top: 0;
+    background-color: white;
+    margin-top: 65px;
+    z-index: 100;
+}
+/* .click-cont{
+    display: flex;
+    flex-direction: column;
+} */
+.brow-cate{
+    display: flex;
+    gap: 20px;
+    width: 460px;
+    position:absolute;
+    /* top: 60px; */
+    /* z-index: 100; */
+    background-color: white;
+    margin-top: 30px;
+    border: 1px solid rgb(188, 227, 201);
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(230, 229, 229);
+    z-index: 100;
+}
+.cate-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.milk-cont{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid gainsboro;
+    width: 190px;
+    border-radius: 6px;
+    padding: 5px 18px;
+}
+.milk-cont img{
+    width: 30px;
+    height: 30px;
+}
+.milk-div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.milk-div p{
+    font-size: 14px;
+    font-weight: 600;
 }
