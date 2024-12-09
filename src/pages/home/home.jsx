@@ -93,11 +93,11 @@
                             delay: 5000, // Change slide every 10 seconds
                             disableOnInteraction: false, // Continue autoplay even after user interaction
                         }}
-                        // breakpoints={{
+                        breakpoints={{
                         //     640: { slidesPerView: 2 },
-                        //     768: { slidesPerView: 3 },
-                        //     1024: { slidesPerView: 4 },
-                        // }}
+                            1100: { slidesPerView: 5 },
+                            1200: { slidesPerView: 6 },
+                        }}
                         className="scrolling-div"
                     >
                         <SwiperSlide>

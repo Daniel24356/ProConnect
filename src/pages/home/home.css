@@ -401,3 +401,50 @@
   .leftdiv {
     width: 20%;
   }
+
+  @media screen and (max-width: 1415px){
+       .trending-shi {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+       }
+
+       .selling {
+        width: 100%;
+       }
+  }
+
+  @media screen and (max-width: 1400px){
+       .rightdiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       }
+
+       .topcontact {
+          gap: 500px;
+       }
+
+  }
+
+
+  @media screen and (max-width: 1303px){
+     .tags {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+     }
+
+     .each-tag {
+        width: 100%;
+     }
+  }
+
+  @media screen and (max-width: 1222px){
+       .topcontact {
+          flex-direction: column;
+          gap: 50px;
+       }
+
+       .leftdiv {
+        width: 100%;
+       }
+  }
