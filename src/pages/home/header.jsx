@@ -7,7 +7,7 @@
   import { IoCartOutline } from "react-icons/io5";
   import { FaRegUser } from "react-icons/fa";
   import { FiHeadphones } from "react-icons/fi";
-  import { FaFireAlt } from "react-icons/fa";
+//   import { FaFireAlt } from "react-icons/fa";
   import { AiOutlineAppstore } from "react-icons/ai";
 
   const Header = () => {
@@ -43,7 +43,7 @@
                 <div className="wish">
                    <FaRegHeart className="s-icons"/>
                     <p>Wishlist</p>
-                    <div className="six">6</div>
+                    <div className="six">3</div>
                 </div>
                 <div className="carts">
                   <IoCartOutline className="s-icons"/>

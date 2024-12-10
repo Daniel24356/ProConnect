@@ -1,11 +1,12 @@
 import './App.css'
-import Home from './pages/home/home'
-
+// import Home from './pages/home/home'
+import Wishlist from './pages/home/Wishlist'
 function App() {
 
   return (
     <>
-    <Home/>
+    {/* <Home/> */}
+      <Wishlist/>
     </>
   )
 }
