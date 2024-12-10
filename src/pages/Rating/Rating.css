@@ -1,0 +1,25 @@
+.rating-container {
+    display: flex;
+    gap: 2px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .star {
+    color: #ddd;
+    transition: color 0.3s ease-in-out;
+    width: 60px;
+    height:17px;
+    background-position: 0 -12px;
+    transition: all .5s ease-out 0s;
+    -webkit-transition: all .5s ease-out 0s;
+  }
+  
+  .star.filled {
+    color: #f5a623;
+  }
+  
+  .star:hover {
+    color: #ff9900;
+  }
+  

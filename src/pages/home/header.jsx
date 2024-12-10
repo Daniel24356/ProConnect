@@ -35,7 +35,7 @@ const Header = () => {
           setIsFixed(false);
         }
       };
-  
+      
       window.addEventListener("scroll", handleScroll);
   
       return () => {
@@ -45,7 +45,8 @@ const Header = () => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
-    return (
+
+     return (
         <>
             <div className="top-div">
                 <div className="order-track">
