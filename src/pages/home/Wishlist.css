@@ -145,3 +145,24 @@ td {
   .main-table {
     padding-top: 50px;
   }
+
+  .stocks {
+    color: #f74b81;
+    background-color: #fde0e9;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .todos {
+    background-color: #3e5379;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
