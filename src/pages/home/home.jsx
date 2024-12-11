@@ -9,38 +9,38 @@ import { FaShuffle } from "react-icons/fa6";
 import { useState } from 'react';
 import CountCard from '../CountCard/CountCard'
 import { BsChevronRight } from "react-icons/bs";
-import fruit from '../../assets/fruits.svg';
-import seafood from '../../assets/seafood.svg';
-import rice from '../../assets/rice.svg';
-import crab from '../../assets/crab.svg';
-import milk from '../../assets/milk.svg';
-import basket from '../../assets/basket.svg';
-import wines from '../../assets/wines.svg';
-import dress from '../../assets/dress.svg';
-import pet from '../../assets/pet.svg';
-import packages from '../../assets/package.svg';
-import baking from '../../assets/baking.svg';
-import carrot from '../../assets/carrot.jpg';
-import pepper from '../../assets/pepper.jpg';
-import mango from '../../assets/mango.jpg';
-import banana from '../../assets/banana.jpg';
-import watermelon from '../../assets/watermelon.jpg';
-import kiwi from '../../assets/kiwi.jpg';
-import raw from '../../assets/raw.jpg';
-import sachet from '../../assets/sachet.jpg';
-import corn from '../../assets/corn.jpg';
-import pomegranate from '../../assets/pomegranate.jpg';
-import pear from '../../assets/pear.jpg';
-import orange from '../../assets/orange.jpg';
-import tag from '../../assets/tag.svg';
-import shake from '../../assets/shake.svg';
-import contract from '../../assets/contract.svg';
-import man from '../../assets/man.svg';
-import box from '../../assets/box.svg';
-import zerd from '../../assets/zerds.png';
-import apple from '../../assets/apple.jpg';
-import google from '../../assets/google.jpg';
-import visa from '../../assets/visa.png';
+import fruit from '../../assets/promotion/fruits.svg';
+import seafood from '../../assets/promotion/seafood.svg';
+import rice from '../../assets/promotion/rice.svg';
+import crab from '../../assets/promotion/crab.svg';
+import milk from '../../assets/promotion/milk.svg';
+import basket from '../../assets/promotion/basket.svg';
+import wines from '../../assets/promotion/wines.svg';
+import dress from '../../assets/promotion/dress.svg';
+import pet from '../../assets/promotion/pet.svg';
+import packages from '../../assets/promotion/package.svg';
+import baking from '../../assets/promotion/baking.svg';
+import carrot from '../../assets/promotion/carrot.jpg';
+import pepper from '../../assets/promotion/pepper.jpg';
+import mango from '../../assets/promotion/mango.jpg';
+import banana from '../../assets/promotion/banana.jpg';
+import watermelon from '../../assets/promotion/watermelon.jpg';
+import kiwi from '../../assets/promotion/kiwi.jpg';
+import raw from '../../assets/promotion/raw.jpg';
+import sachet from '../../assets/promotion/sachet.jpg';
+import corn from '../../assets/promotion/corn.jpg';
+import pomegranate from '../../assets/promotion/pomegranate.jpg';
+import pear from '../../assets/promotion/pear.jpg';
+import orange from '../../assets/promotion/orange.jpg';
+import tag from '../../assets/promotion/tag.svg';
+import shake from '../../assets/promotion/shake.svg';
+import contract from '../../assets/promotion/contract.svg';
+import man from '../../assets/promotion/man.svg';
+import box from '../../assets/promotion/box.svg';
+import zerd from '../../assets/promotion/zerds.png';
+import apple from '../../assets/promotion/apple.jpg';
+import google from '../../assets/promotion/google.jpg';
+import visa from '../../assets/promotion/visa.png';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import { CiLocationOn } from "react-icons/ci";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
@@ -51,12 +51,50 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
+import img1 from '../../assets/promotion/nestback.jpg';
+import img2 from '../../assets/promotion/nestofront.jpg';
+import img8A from '../../assets/promotion/Nutritionfront.jpg';
+import img8B from '../../assets/promotion/Nutritionback.jpg';
+import img6A from '../../assets/promotion/banaback.jpg';
+import img6B from '../../assets/promotion/banafront.jpg';
+import img5A from '../../assets/promotion/cafeback.jpg';
+import img5B from '../../assets/promotion/cafefront.jpg';
+import img4A from '../../assets/promotion/Orangeback-removebg-preview.png';
+import img4B from '../../assets/promotion/Orangefront-removebg-preview.png';
+import img3A from '../../assets/promotion/viggieback.jpg';
+import img3B from '../../assets/promotion/vegepostfront.jpg';
+import img2A from '../../assets/promotion/seedbag1.jpg';
+import img2B from '../../assets/promotion/seedbag2.jpg';
+import img1A from '../../assets/promotion/bottleback.jpg';
+import img1B from '../../assets/promotion/bottlefront.jpg';
 
 
 
 const Home = () => {
 
+    const [pic, setPic] = useState(false);
+    const [picCard2, setPicCard2] = useState(false);
+    const [picCard3, setPicCard3] = useState(false);
+    const [picCard4, setPicCard4] = useState(false);
+    const [picCard5, setPicCard5] = useState(false);
+    const [picCard6, setPicCard6] = useState(false);
+    const [picCard7, setPicCard7] = useState(false);
+    const [picCard8, setPicCard8] = useState(false);
+
+    
     const [rating, setRating] = useState(0); // Store the rating
+
+
+    const [isHoveredCard1, setIsHoveredCard1] = useState(false);
+    const [isHoveredCard2, setIsHoveredCard2] = useState(false);
+    const [isHoveredCard3, setIsHoveredCard3] = useState(false);
+    const [isHoveredCard4, setIsHoveredCard4] = useState(false);
+    const [isHoveredCard5, setIsHoveredCard5] = useState(false);
+    const [isHoveredCard6, setIsHoveredCard6] = useState(false);
+    const [isHoveredCard7, setIsHoveredCard7] = useState(false);
+    const [isHoveredCard8, setIsHoveredCard8] = useState(false);
+    
+   
 
     const handleRating = (rate) => {
       setRating(rate); // Update the rating state
@@ -70,6 +108,10 @@ const Home = () => {
     const [hoverText5, setHoverText5] = useState("");
     const [hoverText6, setHoverText6] = useState("");
     const [hoverText7, setHoverText7] = useState("");
+    const [hoverText8, setHoverText8] = useState("");
+
+
+    
     return (
         <>
         <Header/>
@@ -181,15 +223,17 @@ const Home = () => {
                 </div>
 
                 <div className='try'>
-                <div className='card-div'>
-                    <div className="product-card">
-                        
-                    <div className="tip1">
+                <div className='card-div'onMouseOver={() => setIsHoveredCard8(true)}
+                        onMouseOut={() => setIsHoveredCard8(false)}>
+                    <div className="product-card" onMouseOver={()=>setPicCard8(true)} onMouseOut={()=>setPicCard8(false)}>
+                    <div className="badges1"></div>{isHoveredCard8 &&
+                    <>
+                    <div className="tip3">
 
-                    <div className='tip'>
+                    <div className='tip2'>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText("Quick View")}
                         onMouseLeave={() => setHoverText("")}
                     >
@@ -198,7 +242,7 @@ const Home = () => {
                     </div>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText("Add To Wishlist")}
                         onMouseLeave={() => setHoverText("")}
                     >
@@ -207,7 +251,7 @@ const Home = () => {
                     </div>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText("Add To Compare")}
                         onMouseLeave={() => setHoverText("")}
                     >
@@ -217,9 +261,12 @@ const Home = () => {
                             
                     </div>
                 </div>
+                </>}
+                <img src={img1A} alt="" style={{display: picCard8? 'flex':'none', animationName: picCard8?'hovered':''}}/>
+                <img src={img1B} alt="" style={{display: picCard8? 'none':'flex'}}/>
 
-                <div className='details'>
-                    <div className="lightspan">Cake $ Milk</div>
+                <div className='details1'>
+                    <div className="lightspan1">Cake $ Milk</div>
 
                     <div className="info">
                         <span className="product-header"><h2 className='text-truncate'>Seeds of Change Organic Quinoe</h2></span>
@@ -235,7 +282,7 @@ const Home = () => {
                     </div>
                     <div className="price">
                         <span>$1,845.00</span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline  style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -252,11 +299,12 @@ const Home = () => {
             {/* Second-card */}
 
 
-        <div className='card-div'>
-                    <div className="product-design">
+        <div className='card-div'onMouseOver={() => setIsHoveredCard7(true)}
+                        onMouseOut={() => setIsHoveredCard7(false)}>
+                    <div className="product-design"onMouseOver={()=>setPicCard7(true)} onMouseOut={()=>setPicCard7(false)}>
                         
-                    <div className="badges"><span>Hot</span></div>
-
+                    <div className="badges"><span>Hot</span></div>{isHoveredCard7 &&
+                        <>
                     <div className="tip3">
 
                     <div className='tip2'>
@@ -290,6 +338,9 @@ const Home = () => {
                             
                     </div>
                 </div>
+                </>}
+                <img src={img2B} alt="" style={{display: picCard7? 'flex':'none', animationName: picCard7?'hovered':''}}/>
+                <img src={img2A} alt="" style={{display: picCard7? 'none':'flex'}}/>
 
                 <div className='details1'>
                     <div className="lightspan1">Pet Food</div>
@@ -310,7 +361,7 @@ const Home = () => {
                         <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                         </span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -320,15 +371,17 @@ const Home = () => {
         
             {/* third-card */}
 
-        <div className='card-div'>
-                    <div className="product-card4">
-                        
-                    <div className="tip1">
+        <div className='card-div'onMouseOver={() => setIsHoveredCard6(true)}
+                        onMouseOut={() => setIsHoveredCard6(false)}>
+                    <div className="product-card4"onMouseOver={()=>setPicCard6(true)} onMouseOut={()=>setPicCard6(false)}>
+                    <div className="badges1"></div>{isHoveredCard6 &&
+                        <>
+                    <div className="tip3">
 
-                    <div className='tip'>
+                    <div className='tip2'>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText3("Quick View")}
                         onMouseLeave={() => setHoverText3("")}
                     >
@@ -337,7 +390,7 @@ const Home = () => {
                     </div>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText3("Add To Wishlist")}
                         onMouseLeave={() => setHoverText3("")}
                     >
@@ -346,7 +399,7 @@ const Home = () => {
                     </div>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText3("Add To Compare")}
                         onMouseLeave={() => setHoverText3("")}
                     >
@@ -356,9 +409,11 @@ const Home = () => {
                             
                     </div>
                 </div>
-
-                <div className='details'>
-                    <div className="lightspan">Cake $ Milk</div>
+                </>}
+                <img src={img3B} alt="" style={{display: picCard6? 'flex':'none', animationName: picCard6?'hovered':''}}/>
+                <img src={img3A} alt="" style={{display: picCard6? 'none':'flex'}}/>
+                <div className='details1'>
+                    <div className="lightspan1">Cake $ Milk</div>
 
                     <div className="info">
                         <span className="product-header"><h2 className='text-truncate'>Seeds of Change Organic Quinoe</h2></span>
@@ -374,7 +429,7 @@ const Home = () => {
                     </div>
                     <div className="price">
                         <span>$1,845.00</span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -390,11 +445,12 @@ const Home = () => {
          
         {/* fourth-card */}
 
-        <div className='card-div'>
-                    <div className="product-design1">
+        <div className='card-div'onMouseOver={() => setIsHoveredCard5(true)}
+                        onMouseOut={() => setIsHoveredCard5(false)}>
+                    <div className="product-design1"onMouseOver={()=>setPicCard5(true)} onMouseOut={()=>setPicCard5(false)}>
                         
-                    <div className="badges1"><span>-37%</span></div>
-
+                    <div className="badges1"><span>-37%</span></div>{isHoveredCard5 &&
+                        <>
                     <div className="tip3">
 
                     <div className='tip2'>
@@ -428,7 +484,9 @@ const Home = () => {
                             
                     </div>
                 </div>
-
+                </>}
+                <img src={img4B} alt="" style={{display: picCard5? 'flex':'none', animationName: picCard5?'hovered':''}}/>
+                <img src={img4A} alt="" style={{display: picCard5? 'none':'flex'}}/>
                 <div className='details1'>
                     <div className="lightspan1">Pet Food</div>
 
@@ -448,7 +506,7 @@ const Home = () => {
                         <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                         </span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -461,11 +519,12 @@ const Home = () => {
             {/* fifth-card */}
 
 
-            <div className='card-div'>
-                    <div className="product-card5">
+            <div className='card-div'onMouseOver={() => setIsHoveredCard4(true)}
+                        onMouseOut={() => setIsHoveredCard4(false)}>
+                    <div className="product-card5"onMouseOver={()=>setPicCard4(true)} onMouseOut={()=>setPicCard4(false)}>
                         
-                    <div className="badges"><span>Hot</span></div>
-
+                    <div className="badges"><span>Hot</span></div>{isHoveredCard4 && 
+                        <>
                     <div className="tip3">
 
                     <div className='tip2'>
@@ -499,6 +558,9 @@ const Home = () => {
                             
                     </div>
                 </div>
+                </>}
+                <img src={img5B} alt="" style={{display: picCard4? 'flex':'none', animationName: picCard4?'hovered':''}}/>
+                <img src={img5A} alt="" style={{display: picCard4? 'none':'flex'}}/>
 
                 <div className='details1'>
                     <div className="lightspan1">Pet Food</div>
@@ -519,7 +581,7 @@ const Home = () => {
                         <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                         </span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -535,45 +597,49 @@ const Home = () => {
 
                 {/* six-card */}
 
-        <div className='card-div'>
-                    <div className="product-card6">
-                        
-                    <div className="tip1">
-
-                    <div className='tip'>
+        <div className='card-div'onMouseOver={() => setIsHoveredCard3(true)}
+                        onMouseOut={() => setIsHoveredCard3(false)}>
+                    <div className="product-card6"onMouseOver={()=>setPicCard3(true)} onMouseOut={()=>setPicCard3(false)}>
+                    <div className="badges1"></div>{isHoveredCard3 && 
+                    <>
+                    <div className="tip3">
+                    <div className='tip2'>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText6("Quick View")}
                         onMouseLeave={() => setHoverText6("")}
                     >
-                        <IoEyeOutline className='fa'/>
-                        {hoverText6 === "Quick View" && <div className="tooltip">{hoverText6}</div>}
+                        <IoEyeOutline className='fa1'/>
+                        {hoverText6 === "Quick View" && <div className="tooltip1">{hoverText6}</div>}
                     </div>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText6("Add To Wishlist")}
                         onMouseLeave={() => setHoverText6("")}
                     >
-                        <FaRegHeart className='fa'/>
-                        {hoverText6 === "Add To Wishlist" && <div className="tooltip">{hoverText6}</div>}
+                        <FaRegHeart className='fa1'/>
+                        {hoverText6 === "Add To Wishlist" && <div className="tooltip1">{hoverText6}</div>}
                     </div>
 
                     <div
-                        className="icon"
+                        className="icon1"
                         onMouseEnter={() => setHoverText4("Add To Compare")}
                         onMouseLeave={() => setHoverText4("")}
                     >
-                        <FaShuffle className='fa'/>
-                        {hoverText4 === "Add To Compare" && <div className="tooltip">{hoverText4}</div>}
+                        <FaShuffle className='fa1'/>
+                        {hoverText4 === "Add To Compare" && <div className="tooltip1">{hoverText4}</div>}
                     </div>
                             
                     </div>
                 </div>
+                </>}
+                <img src={img6A} alt="" style={{display: picCard3? 'flex':'none', animationName: picCard3?'hovered':''}}/>
+                <img src={img6B} alt="" style={{display: picCard3? 'none':'flex'}}/>
 
-                <div className='details'>
-                    <div className="lightspan">Cake $ Milk</div>
+                <div className='details1'>
+                    <div className="lightspan1">Cake $ Milk</div>
 
                     <div className="info">
                         <span className="product-header"><h2 className='text-truncate'>Seeds of Change Organic Quinoe</h2></span>
@@ -589,7 +655,7 @@ const Home = () => {
                     </div>
                     <div className="price">
                         <span>$1,845.00</span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -598,17 +664,17 @@ const Home = () => {
 
 
              {/* seven-card */}
+             
 
-        <div className='card-div'>
-                    <div className="product-design7">
+        <div className='card-div'onMouseOver={() => setIsHoveredCard1(true)}
+                        onMouseOut={() => setIsHoveredCard1(false)}>
+                    <div className="product-design7" onMouseOver={()=>setPic(true)} onMouseOut={()=>setPic(false)}>
                         
-                    <div className="badges1"><span>-37%</span></div>
-
+                    <div className="badges1"><span>-37%</span></div>{isHoveredCard1 && 
+                    <>
                     <div className="tip3">
-
-                    <div className='tip2'>
-
-                    <div
+                        <div className='tip2'>
+                       <div
                         className="icon1"
                         onMouseEnter={() => setHoverText7("Quick View")}
                         onMouseLeave={() => setHoverText7("")}
@@ -633,10 +699,14 @@ const Home = () => {
                     >
                         <FaShuffle className='fa1'/>
                         {hoverText7 === "Add To Compare" && <div className="tooltip1">{hoverText7}</div>}
+                    </div> 
                     </div>
-                            
-                    </div>
+                
                 </div>
+                </>}
+                    <img src={img1} alt="" style={{display: pic? 'flex':'none', animationName: pic?'hover,fadeIn':''}}/>
+                    <img src={img2} alt="" style={{display: pic? 'none':'flex'}}/>
+
 
                 <div className='details1'>
                     <div className="lightspan1">Pet Food</div>
@@ -657,7 +727,7 @@ const Home = () => {
                         <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                         </span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -668,44 +738,46 @@ const Home = () => {
            {/* Eight-card */}
 
 
-           <div className='card-div'>
-                    <div className="product-design">
+           <div className='card-div'onMouseOver={() => setIsHoveredCard2(true)}
+                        onMouseOut={() => setIsHoveredCard2(false)}>
+                    <div className="product-design8"onMouseOver={()=>setPicCard2(true)} onMouseOut={()=>setPicCard2(false)}>
                         
-                    <div className="badges"><span>Hot</span></div>
-
+                    <div className="badges"></div>{isHoveredCard2 &&
+                        <>
                     <div className="tip3">
-
                     <div className='tip2'>
-
-                    <div
+                       <div
                         className="icon1"
-                        onMouseEnter={() => setHoverTexts("Quick View")}
-                        onMouseLeave={() => setHoverTexts("")}
+                        onMouseEnter={() => setHoverText8("Quick View")}
+                        onMouseLeave={() => setHoverText8("")}
                     >
                         <IoEyeOutline className='fa1'/>
-                        {hoverTexts === "Quick View" && <div className="tooltip1">{hoverTexts}</div>}
+                        {hoverText8 === "Quick View" && <div className="tooltip1">{hoverText8}</div>}
                     </div>
 
                     <div
                         className="icon1"
-                        onMouseEnter={() => setHoverTexts("Add To Wishlist")}
-                        onMouseLeave={() => setHoverTexts("")}
+                        onMouseEnter={() => setHoverText8("Add To Wishlist")}
+                        onMouseLeave={() => setHoverText8("")}
                     >
                         <FaRegHeart className='fa1'/>
-                        {hoverTexts === "Add To Wishlist" && <div className="tooltip1">{hoverTexts}</div>}
+                        {hoverText8 === "Add To Wishlist" && <div className="tooltip1">{hoverText8}</div>}
                     </div>
 
                     <div
                         className="icon1"
-                        onMouseEnter={() => setHoverTexts("Add To Compare")}
-                        onMouseLeave={() => setHoverTexts("")}
+                        onMouseEnter={() => setHoverText8("Add To Compare")}
+                        onMouseLeave={() => setHoverText8("")}
                     >
                         <FaShuffle className='fa1'/>
-                        {hoverTexts === "Add To Compare" && <div className="tooltip1">{hoverTexts}</div>}
-                    </div>
-                            
-                    </div>
+                        {hoverText8 === "Add To Compare" && <div className="tooltip1">{hoverText8}</div>}
+                    </div>  
+                       
+                    </div> 
                 </div>
+                    </>}
+                    <img src={img8A} alt="" style={{display: picCard2? 'flex':'none', animationName: picCard2?'hovered':''}}/>
+                    <img src={img8B} alt="" style={{display: picCard2? 'none':'flex'}}/>
 
                 <div className='details1'>
                     <div className="lightspan1">Pet Food</div>
@@ -726,7 +798,7 @@ const Home = () => {
                         <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                         </span>
-                        <button className='cart'> <IoCartOutline size={14}/> Add</button>
+                        <button className='cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 

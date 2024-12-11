@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 50%; /* Covers half the div */
-  background-image: url(/src/assets/days.png);
+  background-image: url(/src/assets/promotion/days.png);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px; /* Apply border radius */
@@ -55,7 +55,7 @@
   left: 0;
   width: 100%;
   height: 50%; /* Covers half the div */
-  background-image: url(/src/assets/days1.png);
+  background-image: url(/src/assets/promotion/days1.png);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px; /* Apply border radius */
@@ -92,7 +92,7 @@
   left: 0;
   width: 100%;
   height: 50%; /* Covers half the div */
-  background-image: url(/src/assets/banner-7.png);
+  background-image: url(/src/assets/promotion/banner-7.png);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px; /* Apply border radius */
@@ -129,7 +129,7 @@
   left: 0;
   width: 100%;
   height: 50%; /* Covers half the div */
-  background-image: url(/src/assets/banner-8.png);
+  background-image: url(/src/assets/promotion/banner-8.png);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 15px; /* Apply border radius */
@@ -440,4 +440,7 @@
 }
 .counter-div span:hover{
   transform: translateY(-50%);
+}
+.icon{
+  font-size: 40px;
 }

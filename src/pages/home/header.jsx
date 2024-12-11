@@ -1,4 +1,4 @@
-  import zerd from "../../assets/zerds.png"
+  import zerd from "../../assets/promotion/zerds.png"
   import './header.css'
   import { RiArrowDropDownLine } from "react-icons/ri";
   import { IoSearchOutline } from "react-icons/io5";

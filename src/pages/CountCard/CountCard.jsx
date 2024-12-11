@@ -30,38 +30,6 @@ const CountdownCard = () => {
   }, []);
     
       return (
-    //     <div className="deals-card">
-    //   {/* Card Image with Timer */}
-    //   <div className="card-image">
-    //     <img
-    //       src="https://via.placeholder.com/280x150"
-    //       alt="Product"
-    //       className="product-image"
-    //     />
-    //     <div className="timer-container">
-    //       <div className="timer-box">
-    //         <span></span>
-    //         <p>Days</p>
-    //       </div>
-    //       <div className="timer-box">
-    //         <span></span>
-    //         <p>Hours</p>
-    //       </div>
-    //       <div className="timer-box">
-    //         <span></span>
-    //         <p>Mins</p>
-    //       </div>
-    //       <div className="timer-box">
-    //         <span></span>
-    //         <p></p>
-    //       </div>
-    //     </div>
-    //     <div className="discount">
-    //       <span>29</span>
-    //     </div>
-    //   </div>
-    // </div>
-
 
     <>
          <div className='count-div'>
@@ -108,7 +76,7 @@ const CountdownCard = () => {
                         <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                         </span>
-                        <button className='count-cart'> <IoCartOutline className="CartOut"/> Add</button>
+                        <button className='count-cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
                     </div>
                 </div>
             </div> 
@@ -158,7 +126,7 @@ const CountdownCard = () => {
                   <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                   </span>
-                  <button className='count-cart'> <IoCartOutline className="CartOut"/> Add</button>
+                  <button className='count-cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
               </div>
               </div>
               </div> 
@@ -208,7 +176,7 @@ const CountdownCard = () => {
                   <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                   </span>
-                  <button className='count-cart'> <IoCartOutline className="CartOut"/> Add</button>
+                  <button className='count-cart'> <IoCartOutline style={{ fontSize: "16px"}} className="icon" /> Add</button>
               </div>
               </div>
               </div> 
@@ -258,7 +226,7 @@ const CountdownCard = () => {
                   <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                   </span>
-                  <button className='count-cart'> <IoCartOutline className="CartOut"/> Add</button>
+                  <button className='count-cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
               </div>
               </div>
               </div> 
