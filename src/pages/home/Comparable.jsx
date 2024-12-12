@@ -1,5 +1,8 @@
 import './Comparable.css'
 import Header from './header'
+import product1 from '../../assets/product1.jpg'
+import product2 from '../../assets/product2.jpg'
+import product3 from '../../assets/product4.jpg'
 const Comparable = () => {
   return (
      <>
@@ -7,6 +10,17 @@ const Comparable = () => {
         <section className="overall">
         <h1 className="my">Products Compare</h1>
         <p className="products">There are  <span className="five">3 </span>products to compare</p>
+
+        <div className="main-div">
+            <table className="main-table">
+                <tr className="first">
+                    <td className="preview">Preview</td>
+                    <td><img src={product1} alt="" className="peanut"/></td>
+                    <td><img src={product2} alt="" className="peanut"/></td>
+                    <td className='peanutnew'><img src={product3} alt="" className="peanut"/></td>
+                </tr>
+            </table>
+        </div>
         </section>
      </>
   )

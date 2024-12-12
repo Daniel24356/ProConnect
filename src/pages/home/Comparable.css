@@ -23,3 +23,33 @@
 .five {
     color: #3BB77E;
 }
+
+.main-div {
+    padding-top: 50px;
+}
+
+.peanut {
+    width: 100%;
+}
+
+.preview {
+    color: #B6B6B6;
+    padding-left: 70px;
+    padding-right: 70px; 
+}
+
+.first {
+  border: 1px solid #B6B6B6;
+}
+
+table {
+    border: 1px solid #B6B6B6;
+}
+
+td {
+    border-right: 1px solid #B6B6B6;
+}
+
+.peanutnew {
+    border: none;
+}
