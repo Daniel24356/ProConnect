@@ -168,5 +168,55 @@ td {
   }
 
   @media screen and (max-width: 1511px){
-    
+      .describe {
+        padding-right: 100px;
+      }
+  }
+
+  @media screen and (max-width: 1460px){
+      .describe {
+        padding-right: 50px;
+      }
+  }
+
+  @media screen and (max-width: 1415px){
+      .price {
+        padding-right: 40px;
+      }
+  }
+
+  @media screen and (max-width: 1371px){
+       .describe {
+         padding-right: 20px;
+       }
+  }
+
+  @media screen and (max-width: 1334px){
+       td {
+        padding: 10px;
+       }
+  }
+
+  @media screen and (max-width: 1275px){
+      .wishlist {
+        padding: 50px;
+      }
+  }
+
+  @media screen and (max-width: 1191px){
+      td {
+        padding: 5px;
+      }
+  }
+
+  @media screen and (max-width: 1149px){
+       .price {
+        font-size: 35px;
+       }
+  }
+
+  @media screen and (max-width: 1132px){
+      .wishlist {
+        padding: 20px;
+      }
   }
