@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.overall {
+    padding: 100px;
+}
+
+.my {
+    font-size: 56px;
+    color: #253D4E;
+}
+
+.products {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #7E7E7E;
+}
+
+.five {
+    color: #3BB77E;
+}

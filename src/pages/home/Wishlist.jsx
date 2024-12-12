@@ -91,7 +91,7 @@ const Wishlist = () => {
                   </td>
                   <td className="price">$3.21</td>
                   <td><span className="stocks">Out Stock</span></td>
-                  <td><a href="" className="todos">Contact Us</a></td>
+                  <td><a href="" className="todos   ">Contact Us</a></td>
                   <td><a href="" className="trash"><FaRegTrashAlt /></a></td>
                 </tr>
               </tbody>
