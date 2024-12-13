@@ -19,6 +19,20 @@ const Comparable = () => {
                     <td><img src={product2} alt="" className="peanut"/></td>
                     <td className='peanutnew'><img src={product3} alt="" className="peanut"/></td>
                 </tr>
+
+                <tr className="first">
+                    <td className="preview">Name</td>
+                    <td><a href="" className="text">J.Crew Mercantile Women&apos; Short</a></td>
+                    <td><a href="" className="text">Amazon Essentials Women&apos;s Tanks</a></td>
+                    <td className='peanutnew'><a href="" className="text">Amazon Brand - Daily Ritual Wom</a></td>
+                </tr>
+
+                <tr className="first">
+                    <td className="preview">Price</td>
+                    <td><p className="newprice">$12.00</p></td>
+                    <td><a href="" className="text">Amazon Essentials Women&apos;s Tanks</a></td>
+                    <td className='peanutnew'><a href="" className="text">Amazon Brand - Daily Ritual Wom</a></td>
+                </tr>
             </table>
         </div>
         </section>
