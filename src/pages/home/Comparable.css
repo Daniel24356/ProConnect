@@ -49,7 +49,7 @@ table {
 td {
     border-right: 1px solid #B6B6B6;
     border-bottom: 1px solid #B6B6B6;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -120,4 +120,52 @@ td {
   .des {
     color: #B6B6B6;
     font-size: 15px;
+  }
+
+  .todo {
+    background-color: #3BB77E;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .todo:hover {
+    background-color: #ffc107;
+  }
+
+  .todos {
+    background-color: #3e5379;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .trash {
+    color: grey;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .second {
+    border-bottom: none;
+  }
+
+  .typeshi {
+    border-bottom: none;
+  }
+
+  .typeshi-new {
+    border: none;
   }

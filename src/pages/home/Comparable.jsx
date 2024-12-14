@@ -4,6 +4,7 @@ import product1 from '../../assets/product1.jpg'
 import product2 from '../../assets/product2.jpg'
 import product3 from '../../assets/product4.jpg'
 import { useState } from 'react'
+import { FaRegTrashAlt } from "react-icons/fa";
 const Comparable = () => {
     
     const [rating, setRating] = useState(0); // Store the rating
@@ -105,6 +106,20 @@ const Comparable = () => {
                     <td><p className="gram">N/A</p></td>
                     <td><p className="gram">N/A</p></td>
                     <td className='peanutnew'><p className="gram">N/A</p></td>
+                </tr>
+
+                <tr className="first">
+                    <td className="preview">Buy Now</td>
+                    <td><a href="" className="todo">Add to cart</a></td>
+                    <td><a href="" className="todo">Add to cart</a></td>
+                    <td className='peanutnew'><a href="" className="todos">Contact Us</a></td>
+                </tr>
+
+                <tr className='second'>
+                    <td className="preview"></td>
+                    <td className='typeshi'><a href="" className="trash"><FaRegTrashAlt /> Remove</a></td>
+                    <td className='typeshi'><a href="" className="trash"><FaRegTrashAlt /> Remove</a></td>
+                    <td className='typeshi-new'><a href="" className="trash"><FaRegTrashAlt /> Remove</a></td>
                 </tr>
             </table>
         </div>
