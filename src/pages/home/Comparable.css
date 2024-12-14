@@ -50,6 +50,7 @@ td {
     border-right: 1px solid #B6B6B6;
     border-bottom: 1px solid #B6B6B6;
     padding: 20px;
+    text-align: center;
 }
 
 .peanutnew {
@@ -63,8 +64,60 @@ td {
     text-decoration: none;
     font-size: 20px;
     transition: 0.4s;
+    text-align: center;
 }
 
 .text:hover {
     color: #ffc107;
 }
+
+.newprice {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3BB77E;
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px; /* Space between stars and text */
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 20px; /* Adjust the size of stars */
+    color: #d3d3d3; /* Default gray color */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star.filled {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
+  .star:hover,
+  .star.filled:hover ~ .star {
+    color: #ffa500; /* Orange on hover */
+    cursor: pointer;
+  }
+
+  .stock {
+    color: #3BB77E;
+    background-color: #DEF9EC;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .stocks {
+    color: #f74b81;
+    background-color: #fde0e9;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .des {
+    color: #B6B6B6;
+    font-size: 15px;
+  }
