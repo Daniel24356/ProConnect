@@ -169,3 +169,15 @@ td {
   .typeshi-new {
     border: none;
   }
+
+  @media screen and (max-width: 995px){
+    .overall {
+        padding: 50px;
+    }
+  }
+
+  @media screen and (max-width: 910px){
+       td {
+        padding: 30px;
+       }
+  }
