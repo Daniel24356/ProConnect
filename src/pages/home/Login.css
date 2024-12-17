@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-section {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 150px;
+}
+
+.login-pic {
+   width: 50%;
+   border-radius: 10px;
+}
+
+.login-div {
+    width: 100%;
+}
