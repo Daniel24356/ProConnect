@@ -22,7 +22,10 @@ const Login = () => {
   </label>
 </div>
 <button className="login-btn">Login</button>
+
+
               </div>
+              <a href="" className="forgot">Forgot Password?</a>
               </form>
 
               

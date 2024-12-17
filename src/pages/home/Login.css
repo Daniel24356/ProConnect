@@ -166,4 +166,30 @@
        transform: translateY(-10px);
        cursor: pointer;
   }
+
+  @media screen and (max-width: 1320px){
+       .login-section {
+        padding: 50px;
+       }
+  }
+
+  @media screen and (max-width: 730px){
+      .login-section {
+        padding-top: 400px;
+      }
+
+      .login-pic {
+        display: none;
+      }
+
+      .formshi {
+        width: 100%;
+      }
+  }
+
+  .forgot {
+    color: grey;
+    text-decoration: none;
+    padding-top: 30px;
+  }
   
