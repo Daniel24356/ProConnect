@@ -15,6 +15,155 @@
    border-radius: 10px;
 }
 
-.login-div {
+.right-login {
     width: 100%;
 }
+
+.login-div {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.my {
+    font-size: 56px;
+    color: #253D4E;
+}
+
+.create {
+    padding-top: 15px;
+    color: #7E7E7E;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.one {
+    color: #3BB77E;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.one:hover {
+    color: #ffc107;
+}
+
+.name {
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.name:focus {
+    border: none;
+    border: 1px solid #3BB77E;
+}
+
+.checkbox-wrapper-46 {
+    padding-top: 30px;
+}
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #3BB77E;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #3BB77E;
+  }
+  
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #3BB77E;
+    border-color: #3BB77E;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+  .formshi {
+    width: 50%;
+  }
+
+  .login-btn {
+    background-color: #253D4E;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin-top: 30px;
+  }
+
+  .login-btn:hover {
+       background-color: #3BB77E;
+       transform: translateY(-10px);
+       cursor: pointer;
+  }
+  

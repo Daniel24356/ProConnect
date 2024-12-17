@@ -47,7 +47,7 @@ const Wishlist = () => {
                   </td>
                   <td className="price">$2.51</td>
                   <td><span className="stock">In Stock</span></td>
-                  <td><a href="" className="todo">Add to cart</a></td>
+                  <td><button className="todo">Add to cart</button></td>
                   <td><a href="" className="trash"><FaRegTrashAlt /></a></td>
                 </tr>
 
