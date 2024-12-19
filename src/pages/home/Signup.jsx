@@ -1,11 +1,13 @@
 import './Signup.css'
+import facebook from '../../assets/facebook.svg'
 const Signup = () => {
   return (
     <>
       <section className="login-section">
           <div className="login-div">
               <form action="" className='formshi'>
-              <div className="right-login">
+                 <div className="left-form">
+                 <div className="right-login">
                  <h1 className="my">Create an Account</h1>
                  <p className="create">Already have an account? <a href="" className="one">Login</a></p>
                  <input type="text" className="name" placeholder='Username *'/>
@@ -49,6 +51,11 @@ const Signup = () => {
 
               </div>
               <a href="" className="forgot">Forgot Password?</a>
+                 </div>
+
+                 <div className="socials-signup">
+                     <a href="" className="face"><img src={facebook} alt="" className='facebook-link'/> <span className="text">Continue with Facebook</span></a>
+                 </div>
               </form>
 
               

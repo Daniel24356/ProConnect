@@ -261,4 +261,31 @@
     text-decoration: none;
     padding-top: 30px;
   }
+
+  .face {
+    background-color: #1877F2;
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+
+  .face:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+
+  }
+
+  .text {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
   
