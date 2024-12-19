@@ -22,6 +22,7 @@ import icon7 from "../../assets/icon-7.png"
 import icon8 from "../../assets/icon-8.png"
 import icon9 from "../../assets/icon-9.png"
 import icon10 from "../../assets/icon-10.png"
+import { IoMenuSharp } from "react-icons/io5";
 
 const Header = () => {
     const [isFixed, setIsFixed] = useState(false);
@@ -54,8 +55,6 @@ const Header = () => {
                     <p className="trck-txt">Order Tracking</p>
                 </div>
                 
-                {/* <div className="rotating-text-container">
-                <div className="rotating-text"> */}
                 <div className="trend-bx">
                     <IoIosNotificationsOutline className="not-icon" />
                     <p> 
@@ -64,10 +63,7 @@ const Header = () => {
                     <span className="shop-txt">Shop now</span>
                     </p>
                 </div>
-                {/* <span className="text">Super value Deals- Save more with coupons</span>
-                <span className="text">Get great devices up to 50% off View details</span>
-                </div>
-                </div> */}
+
                 <div className="top-need">
                     <p className="need-txt">Need help?</p>
                     <p className="call-txt">Call Us: <span className="n-txt">1900-888</span></p>
@@ -83,8 +79,13 @@ const Header = () => {
                 </div>
             </div>
             <nav className={`header ${isFixed ? "fixed" : ""}`}>
+                <div className="menu-logo">
+                    <div className="menu">
+                        <IoMenuSharp className="menu-icon"/>
+                    </div>
                 <div>
                     <img className="zerd-img" src={zerd} alt="" />
+                </div>
                 </div>
                 <div className="head-inner">
                     <div className="search-div">

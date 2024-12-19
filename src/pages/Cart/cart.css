@@ -1,0 +1,213 @@
+.cart-div{
+    margin-top: 60px;
+    margin-left: 16px;
+}
+.cart-box h1{
+    font-size: 48px;
+    color: gb(37, 61, 78);
+    font-weight: 900;
+}
+.cart-box p{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(126, 126, 126);
+}
+.cart-box p span{
+    color: rgb(59, 183, 126);
+}
+.cart-bord{
+    padding-bottom: 45px;
+    border-bottom: 1px solid gainsboro;
+}
+.cart-head{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    width: 818px;
+    height: 60px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+.cart-head p{
+    font-size: 17px;
+    font-weight: 700;
+}
+.cart-headinner{
+    display: flex;
+    gap: 42px;
+}
+.cart-all{
+    display: flex;
+    align-items: start;
+    gap: 53px;
+    margin-top: 40px;
+}
+.cart-prod{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    gap: 20px;
+}
+.prod-border{
+    width: 120px;
+    height: 120px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-border img{
+    width: 110px;
+    height: 110px;
+}
+.cart-inner{
+    display: flex;
+    gap: 7px;
+    /* align-items: center; */
+}
+.prod-new{
+    margin-top: 15px;
+}
+.prod-name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.prod-sold{
+    font-size: 12.8px;
+    font-weight: 500;
+    color: rgb(126, 126, 126);
+    margin-top: 8px;
+}
+.prod-sold span{
+    color: rgb(59, 183, 126);
+}
+.prod-weight{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+.unit-price{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(126, 126, 126);
+}
+.sub-total{
+    color: rgb(59, 183, 126);
+    font-size: 24px;
+    font-weight: 700;
+}
+.num-prod{
+    width: 93px;
+    height: 50px;
+    border: 2px solid rgb(59, 183, 126);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(59, 183, 126);
+    font-weight: 700;
+}
+.pr-check{
+    height: 240.198px;
+    width: 367px;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 24px 24px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.05);
+}
+.tax-check{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 15px;
+}
+.tax-first{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(126, 126, 126);
+}
+.tax-second{
+    color: rgb(59, 183, 126);
+    font-size: 16px;
+    font-weight: 600;
+}
+.tax-seconds{
+    color: rgb(59, 183, 126);
+    font-size: 24px;
+    font-weight: 600;
+}
+.tax-third{
+    font-size: 13px;
+    font-weight: 600;
+}
+.tax-check div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pr-check button{
+    margin-top: 30px;
+    width: 317.771px;
+    height: 46px;
+    background-color: rgb(59, 183, 126);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.cont-shop{
+    margin-top: 30px;
+    width: 230px;
+    height: 46px;
+    background-color: rgb(59, 183, 126);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius:4px ;
+    margin-top: 40px;
+}
+.app-coupon{
+    margin-top: 50px;
+}
+.app-coupon h1{
+     font-size: 24px;
+     font-weight: 700;
+     color: rgb(37, 61, 78);
+}
+.app-coupon p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(126, 126, 126);
+    margin-top: 9px;
+}
+.app-coupon input{
+    width: 325.635px;
+    height: 47px;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 236, 236);
+    padding-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+.app-coupon button{
+    width: 126.656px;
+    height: 47px;
+    background-color: rgb(59, 183, 126);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.coupon-div{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
