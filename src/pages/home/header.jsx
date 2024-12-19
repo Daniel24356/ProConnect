@@ -1,15 +1,15 @@
-import zerd from "../../assets/zerds.png"
+  import zerd from "../../assets/zerds.png"
+  import './header.css'
+  import { RiArrowDropDownLine } from "react-icons/ri";
+  import { IoSearchOutline } from "react-icons/io5";
+  import { GrCycle } from "react-icons/gr";
+  import { FaRegHeart } from "react-icons/fa";
+  import { IoCartOutline } from "react-icons/io5";
+  import { FaRegUser } from "react-icons/fa";
+  import { FiHeadphones } from "react-icons/fi";
+  import { AiOutlineAppstore } from "react-icons/ai";
 import Nflag from "../../assets/icons8-nigeria-flag-48.png"
-import './header.css'
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { IoSearchOutline } from "react-icons/io5";
-import { GrCycle } from "react-icons/gr";
-import { FaRegHeart } from "react-icons/fa";
-import { IoCartOutline } from "react-icons/io5";
-import { FaRegUser } from "react-icons/fa";
-import { FiHeadphones } from "react-icons/fi";
-import { FaFireAlt } from "react-icons/fa";
-import { AiOutlineAppstore } from "react-icons/ai";
+import './header.css';
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { useEffect, useState } from "react";
 import icon1 from "../../assets/icon-1.png"

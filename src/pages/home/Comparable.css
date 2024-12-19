@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.overall {
+    padding: 100px;
+}
+
+.my {
+    font-size: 56px;
+    color: #253D4E;
+}
+
+.products {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #7E7E7E;
+}
+
+.five {
+    color: #3BB77E;
+}
+
+.main-div {
+    padding-top: 50px;
+}
+
+.peanut {
+    width: 100%;
+}
+
+.preview {
+    color: #B6B6B6;
+    padding-left: 70px;
+    padding-right: 70px; 
+}
+
+.first {
+  border: 1px solid #B6B6B6;
+}
+
+table {
+    border: 1px solid #B6B6B6;
+}
+
+td {
+    border-right: 1px solid #B6B6B6;
+    border-bottom: 1px solid #B6B6B6;
+    padding: 40px;
+    text-align: center;
+}
+
+.peanutnew {
+    border: none;
+    border-bottom: 1px solid #B6B6B6;
+}
+
+.text {
+    color: #253D4E;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.text:hover {
+    color: #ffc107;
+}
+
+.newprice {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3BB77E;
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px; /* Space between stars and text */
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 20px; /* Adjust the size of stars */
+    color: #d3d3d3; /* Default gray color */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star.filled {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
+  .star:hover,
+  .star.filled:hover ~ .star {
+    color: #ffa500; /* Orange on hover */
+    cursor: pointer;
+  }
+
+  .stock {
+    color: #3BB77E;
+    background-color: #DEF9EC;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .stocks {
+    color: #f74b81;
+    background-color: #fde0e9;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .des {
+    color: #B6B6B6;
+    font-size: 15px;
+  }
+
+  .todo {
+    background-color: #3BB77E;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .todo:hover {
+    background-color: #ffc107;
+  }
+
+  .todos {
+    background-color: #3e5379;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .trash {
+    color: grey;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .second {
+    border-bottom: none;
+  }
+
+  .typeshi {
+    border-bottom: none;
+  }
+
+  .typeshi-new {
+    border: none;
+  }
+
+  @media screen and (max-width: 995px){
+    .overall {
+        padding: 50px;
+    }
+  }
+
+  @media screen and (max-width: 910px){
+       td {
+        padding: 30px;
+       }
+  }
