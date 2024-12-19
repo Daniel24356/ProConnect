@@ -1,5 +1,7 @@
 import './Signup.css'
 import facebook from '../../assets/facebook.svg'
+import googlepic from '../../assets/google.svg'
+import apple from '../../assets/apple.svg'
 const Signup = () => {
   return (
     <>
@@ -55,6 +57,10 @@ const Signup = () => {
 
                  <div className="socials-signup">
                      <a href="" className="face"><img src={facebook} alt="" className='facebook-link'/> <span className="text">Continue with Facebook</span></a>
+
+                     <a href="" className="face-2"><img src={googlepic} alt="" className='facebook-link'/> <span className="text-2">Continue with Google</span></a>
+
+                     <a href="" className="face-3"><img src={apple} alt="" className='facebook-link'/> <span className="text">Continue with Apple</span></a>
                  </div>
               </form>
 
