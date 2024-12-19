@@ -836,6 +836,12 @@ const Home = () => {
                       //     640: { slidesPerView: 2 },
                       1100: { slidesPerView: 5 },
                       1200: { slidesPerView: 6 },
+                      900: {slidesPerView: 4},
+                      706: {slidesPerView: 4},
+                      630: {slidesPerView: 3},
+                      571: {slidesPerView: 3},
+                      430: {slidesPerView: 2},
+                      300: {slidesPerView: 1},
                     }}
                     className="scrolling-div"
                   >

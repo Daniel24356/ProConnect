@@ -1473,7 +1473,7 @@
     transition: transform 0.5s ease;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 30px;
 }
 
@@ -1820,4 +1820,60 @@
         font-size: 30px;
         line-height: 50px;
      }
+ }
+
+ @media screen and (max-width: 967px){
+      .trending-shi {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .selling {
+        width: 100%;
+      }
+
+      .products {
+        gap: 20px;
+        justify-content: none;
+      }
+
+      .nestle {
+        font-size: 30px;
+      }
+ }
+
+ @media screen and (max-width: 776px){
+        .tags {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rightdiv {
+            display: flex;
+            flex-direction: column;
+        }
+ }
+
+ @media screen and (max-width: 620px){
+      .uppercategory {
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+      }
+ }
+
+ @media screen and (max-width: 571px){
+    .nestle {
+        font-size: 20px;
+    }
+ }
+
+ @media screen and (max-width: 435px){
+      .products {
+        flex-direction: column;
+      }
+
+      .each {
+        font-size: 20px;
+      }
  }
