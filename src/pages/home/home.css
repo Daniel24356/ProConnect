@@ -1718,6 +1718,8 @@
      }
   }
 
+ 
+
   @media screen and (max-width: 1222px){
        .topcontact {
           flex-direction: column;
@@ -1727,4 +1729,95 @@
        .leftdiv {
         width: 100%;
        }
+       .home-hero{
+        width: 100%;
+        margin: auto;
+        margin-left:5px;
+       }
+       .carou{
+        padding-top: 30px;
+       }
   }
+  @media screen and (max-width: 1014px){
+     .fruit-div{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+     }
+  }
+  @media screen and (max-width: 970px){
+    .fruit-div{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+     } 
+  }
+  @media screen and (max-width: 873px){
+    .fruit-div{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+     } 
+  }
+  @media screen and (max-width: 729px){
+    .fruit-div{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+     } 
+  }
+  
+  @media screen and (max-width: 675px){
+    .input-btn{
+        margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 625px){
+     .ama-txt{
+        font-size: 36px;
+     }
+  }
+
+  @media screen and (max-width: 611px){
+    .fruit-div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+     } 
+  }
+
+  @media screen and (max-width: 529px){
+    .ama-txt{
+       font-size: 30px;
+    }
+    .input-btn{
+        width: 390px;
+    }
+    .input-btn button{
+        width: 120px;
+    }
+ }
+
+ @media screen and (max-width: 489px){
+     .ama-txt{
+       font-size: 30px;
+       line-height: 60px;
+    }
+    .input-btn{
+        width: 320px;
+    }
+    .input-btn button{
+        width: 110px;
+        border-radius: 25px;
+    } 
+    .fruit-div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+     } 
+ }
+ 
+ @media screen and (max-width: 420px){
+     .home-hero{
+        padding-left: 40px;
+     }
+     .ama-txt{
+        font-size: 30px;
+        line-height: 50px;
+     }
+ }

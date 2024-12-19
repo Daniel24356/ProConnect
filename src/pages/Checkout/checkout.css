@@ -1,0 +1,438 @@
+.checkout-box{
+    margin: 30px 80px;
+    display: flex;
+    gap: 20px;
+}
+.zerd-d{
+    padding-bottom: 5px;
+    border-bottom: 1px solid gainsboro;
+    width: 641px;
+}
+.zerd-c{
+    width: 193.542px;
+}
+.shipp-txt{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(33, 37, 41);
+}
+.alr-txt{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.alr-txt span{
+    color: rgb(88, 179, 240);
+}
+.email-ph{
+    display: flex;
+    gap: 25px;
+}
+.reg-check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.reg-check input{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(196, 205, 213);
+}
+.reg-check p{
+  font-size: 14px;
+  font-weight: 500;
+}
+.bill-div{
+    margin-top: 35px;
+}
+
+.bill-div h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(33, 37, 41);
+}
+.bill-div div{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.bill-div div p{
+  font-size: 14px;
+  font-weight: 500;
+}
+.bill-div div input{
+    width: 16px;
+    height: 16px;
+    border: 1px solid gainsboro;
+}
+.payment-box{
+    margin-top: 30px;
+}
+.payment-box h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+.payment-div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    width: 650px;
+    /* height: 454px; */
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.payment-div div{
+    display: flex;
+    gap: 10px;
+    height: 53.667px;
+    padding: 12px 12px;
+    border-bottom: 1px solid gainsboro;
+}
+.payment-div div p{
+  font-size: 14px;
+  font-weight: 600;
+}
+.payment-div div input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid gainsboro;
+}
+.order-div{
+    margin-top: 30px;
+}
+.order-div{
+  font-size: 14px;
+}
+.order-div div{
+    width: 650px;
+    height: 76.33px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    margin-top: 10px;
+}
+.order-div div input{
+    margin-top: 6px;
+    width: 400px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(33, 37, 41);
+    padding-left: 10px;
+    border: none;
+}
+.cart-cbtn{
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.cart-cbtn p{
+    color: rgb(88, 179, 240);
+    font-size: 14px;
+    font-weight: 500;
+}
+.cart-cbtn button{
+   height: 50px;
+   width: 94.635px;
+   height: 52.33px;
+   font-size: 14px;
+   font-weight: 500;
+   color: white;
+   background-color: rgb(88, 179, 240);
+   border-radius: 7px;
+   border: none;
+}
+.prod-box{
+    background-color: rgb(248,249,250);
+    height: 702px;
+    width: 451px;
+    padding: 25px 20px;
+}
+.prod-div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 235, 215);
+    width: 419px;
+    height: 64.375px;
+    margin-top: 25px;
+    padding: 13px 9px;
+}
+.demo-div img{
+  height: 30px;
+  width: 30px;
+}
+.demo-div p{
+  font-size: 15px;
+  font-weight: 500;
+}
+.prod-txt{
+  font-size: 14px;
+  font-weight: 500;
+}
+.prod-div div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.star-divs p{
+   font-size: 13px;
+}
+.mid-prod{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.prod-img{
+    width: 78.75px;
+    height: 78.75px;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-img img{
+  width: 65px;
+}
+.seed-txt{
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.weig-txt{
+  font-size: 13px;
+  margin-top: 5px;
+}
+.nums-div{
+    width: 70px;
+    height: 28px;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+.ship-txt{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.met-all{
+  padding-bottom: 35px;
+  border-bottom: 1px solid gainsboro;
+  width: 387px;
+}
+.met-div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    width: 387px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+.met-div div{
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 15px;
+    height: 37.66px;
+}
+.met-div div p{
+  font-weight: 500;
+  font-size: 14px;
+}
+.met-div div input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid gainsboro;
+}
+.subs-total{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.subs-txt{
+  font-size: 14px;
+  font-weight: 500;
+}
+.total-txt{
+  font-size: 14px;
+  font-weight: 700;
+}
+.total-new{
+  font-size: 21px;
+  font-weight: 700;
+}
+.subs-total div{
+  display: flex;
+  justify-content: space-between;
+}
+/* From Uiverse.io by Maximinodotpy */ 
+.inputGroup {
+    /* font-family: 'Segoe UI', sans-serif; */
+    /* width: 400px; */
+    margin: 0 0 1em 0;
+    max-width: 644px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 90%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: white;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(220, 220, 220);
+  }
+  .inputGroups{
+    /* font-family: 'Segoe UI', sans-serif; */
+    width: 400px;
+    margin: 0 0 1em 0;
+    max-width: 700px;
+    position: relative;
+  }
+  
+  .inputGroups input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .inputGroups label {
+    font-size: 90%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroups :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: white;
+  }
+  
+  .inputGroups :is(input:focus, input:valid) {
+    border-color: rgb(220, 220, 220);
+  }
+  .inputGroupss{
+    /* font-family: 'Segoe UI', sans-serif; */
+    width: 218px;
+    margin: 0 0 1em 0;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .inputGroupss input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .inputGroupss label {
+    font-size: 90%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroupss :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: white;
+  }
+  
+  .inputGroupss :is(input:focus, input:valid) {
+    border-color: rgb(220, 220, 220);
+  }
+  .inputGroupsss{
+    /* font-family: 'Segoe UI', sans-serif; */
+    width: 309px;
+    margin: 1em 0 1em 0;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .inputGroupsss input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .inputGroupsss label {
+    font-size: 90%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroupsss :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: white;
+  }
+  
+  .inputGroupsss :is(input:focus, input:valid) {
+    border-color: rgb(220, 220, 220);
+  }
