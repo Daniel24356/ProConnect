@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Rating.css";
 import activeStar from "../../assets/active-star.png"; // Yellow star image
 import inactiveStar from "../../assets/inactive-stars.png"; // Grey star image

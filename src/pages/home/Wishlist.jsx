@@ -30,7 +30,7 @@ const Wishlist = () => {
               </thead>
               <tbody>
                 <tr className="each">
-                  <td> <img src={product1} alt="" className='product-image'/></td>
+                  <td className='img-td'> <img src={product1} alt="" className='product-image'/></td>
                   <td className="describe">
                     <a href="" className="link">Field Roast Chao Cheese Creamy Original</a>
                     <div>
@@ -45,14 +45,14 @@ const Wishlist = () => {
                           ))}
                     </div>        
                   </td>
-                  <td className="price">$2.51</td>
+                  <td className="price-new">$2.51</td>
                   <td><span className="stock">In Stock</span></td>
                   <td><button className="todo">Add to cart</button></td>
                   <td><a href="" className="trash"><FaRegTrashAlt /></a></td>
                 </tr>
 
                 <tr className="each">
-                  <td> <img src={product2} alt="" className='product-image'/></td>
+                  <td className='img-td'> <img src={product2} alt="" className='product-image'/></td>
                   <td className="describe">
                     <a href="" className="link">Blue Diamond Almonds Lightly Salted</a>
                     <div>
@@ -67,14 +67,14 @@ const Wishlist = () => {
                           ))}
                     </div>        
                   </td>
-                  <td className="price">$3.2</td>
+                  <td className="price-new">$3.2</td>
                   <td><span className="stock">In Stock</span></td>
-                  <td><a href="" className="todo">Add to cart</a></td>
+                  <td><button className="todo">Add to cart</button></td>
                   <td><a href="" className="trash"><FaRegTrashAlt /></a></td>
                 </tr>
 
                 <tr className="each">
-                  <td> <img src={product4} alt="" className='product-image'/></td>
+                  <td className='img-td'> <img src={product4} alt="" className='product-image'/></td>
                   <td className="describe">
                     <a href="" className="link">Field Roast Chao Cheese Creamy Original</a>
                     <div>
@@ -89,7 +89,7 @@ const Wishlist = () => {
                           ))}
                     </div>        
                   </td>
-                  <td className="price">$3.21</td>
+                  <td className="price-new">$3.21</td>
                   <td><span className="stocks">Out Stock</span></td>
                   <td><a href="" className="todos   ">Contact Us</a></td>
                   <td><a href="" className="trash"><FaRegTrashAlt /></a></td>

@@ -2,33 +2,29 @@ import './App.css'
 // <<<<<<< HEAD
 // import Home from './pages/home/home'
 // =======
-// import Cart from './pages/Cart/cart'
-// import Checkout from './pages/Checkout/checkout'
-// import Header from './pages/home/header'
+import Cart from './pages/Cart/cart'
+import Checkout from './pages/Checkout/checkout'
 import Home from './pages/home/home'
-
-// import Home from './pages/home/home'
-// >>>>>>> 30d1d2920a03141582fc12f8d7696c0514f93f14
-// import Wishlist from './pages/home/Wishlist'
-// import Comparable from './pages/home/Comparable'
-// import Login from './pages/home/Login'
-// import Signup from './pages/home/Signup'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Wishlist from './pages/home/Wishlist'
+import Comparable from './pages/home/Comparable'
+import Login from './pages/home/Login'
+import Signup from './pages/home/Signup'
 function App() {
 
   return (
     <>
-    <Home/>
-{/* <<<<<<< HEAD */}
-=======
-   {/* <Header/>
-   <Cart/> */}
-   {/* <Checkout/> */}
-    {/* <Home/> */}
-{/* >>>>>>> 30d1d2920a03141582fc12f8d7696c0514f93f14 */}
-      {/* <Wishlist/> */}
-      {/* <Comparable/> */}
-      {/* <Login/> */}
-      {/* <Signup/> */}
+       <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='/wishlist' element={<Wishlist/>}/>
+          <Route path='/comparable' element={<Comparable/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Signup/>}/>
+        </Routes>
+       </Router>
     </>
   )
 }

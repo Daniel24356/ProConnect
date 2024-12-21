@@ -23,6 +23,7 @@ import icon8 from "../../assets/icon-8.png"
 import icon9 from "../../assets/icon-9.png"
 import icon10 from "../../assets/icon-10.png"
 import { IoMenuSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [isFixed, setIsFixed] = useState(false);
@@ -101,17 +102,17 @@ const Header = () => {
                     <div className="thr-head">
                         <div className="com">
                             <GrCycle className="s-icons" />
-                            <p>Compare</p>
+                            <Link to="/comparable">Compare</Link>
                             <div className="three">3</div>
                         </div>
                         <div className="wish">
                             <FaRegHeart className="s-icons" />
-                            <p>Wishlist</p>
+                            <Link to="/wishlist">Wishlist</Link>
                             <div className="six">6</div>
                         </div>
                         <div className="carts">
                             <IoCartOutline className="s-icons" />
-                            <p>Cart</p>
+                            <Link to="/cart">Cart</Link>
                             <div className="two">2</div>
                         </div>
                         <div className="acc">
