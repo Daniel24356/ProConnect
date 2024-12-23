@@ -52,6 +52,8 @@ import shake from '../../assets/shake.svg';
 import contract from '../../assets/contract.svg';
 import man from '../../assets/man.svg';
 import box from '../../assets/box.svg';
+import products from '../../Data/products.json'
+import { useWishlist } from '../../context/WishlistContext';
 // Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -83,6 +85,8 @@ const Home = () => {
 
     const handleRating = (rate) => {
       setRating(rate); // Update the rating state
+
+
     };
 
     const [hoverText, setHoverText] = useState("");
@@ -94,6 +98,12 @@ const Home = () => {
     const [hoverText6, setHoverText6] = useState("");
     const [hoverText7, setHoverText7] = useState("");
     const [hoverText8, setHoverText8] = useState("");
+
+    const { addToWishlist } = useWishlist();
+
+    const handleAdd = () => {
+      addToWishlist(products)
+    }
     return (
         <>
         <Header/>
@@ -287,7 +297,10 @@ const Home = () => {
                   {/* Second-card */}
 
 
-                  <div className='card-div'>
+                  {products.map((product) => {
+                      const { name, price, id } = product;
+                        return (
+                      <div className='card-div' key={id}>
                     <div className="product-design">
 
                       <div className="badges"><span>Hot</span></div>
@@ -309,6 +322,7 @@ const Home = () => {
                             className="icon1"
                             onMouseEnter={() => setHoverTexts("Add To Wishlist")}
                             onMouseLeave={() => setHoverTexts("")}
+                            onClick={handleAdd}
                           >
                             <FaRegHeart className='fa1' />
                             {hoverTexts === "Add To Wishlist" && <div className="tooltip1">{hoverTexts}</div>}
@@ -330,7 +344,7 @@ const Home = () => {
                         <div className="lightspan1">Pet Food</div>
 
                         <div className="info1">
-                          <span className="product-header1"><h2 className='text-truncate1'>Seeds of Change Organic Quinoe</h2></span>
+                          <span className="product-header1"><h2 className='text-truncate1'>{name}</h2></span>
                           <div className="content-info1">
                             <div className='rating1'>
                               <Rating totalStars={5}></Rating>
@@ -342,7 +356,7 @@ const Home = () => {
                           </div>
                         </div>
                         <div className="price">
-                          <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
+                          <span className='span1'>${price} <p className='old-price'>$1,845.00</p>
 
                           </span>
                           <button className='cart'> <IoCartOutline size={14} /> Add</button>
@@ -350,6 +364,8 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
+                        )
+                  })}
 
 
 

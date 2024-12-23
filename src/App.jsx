@@ -10,11 +10,13 @@ import Wishlist from './pages/home/Wishlist'
 import Comparable from './pages/home/Comparable'
 import Login from './pages/home/Login'
 import Signup from './pages/home/Signup'
+import { WishlistProvider } from './context/WishlistContext'
 function App() {
 
   return (
     <>
-       <Router>
+      <WishlistProvider>
+      <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/cart' element={<Cart/>}/>
@@ -25,6 +27,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}/>
         </Routes>
        </Router>
+      </WishlistProvider>
     </>
   )
 }
