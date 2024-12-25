@@ -7,8 +7,9 @@ import { FaRegTrashAlt } from "react-icons/fa";
 // import product4 from '../../assets/product4.jpg'
 import { useWishlist } from '../../context/WishlistContext';
 // import products from '../../Data/products.json'
+import Swal from 'sweetalert2';
 const Wishlist = () => {
-    const [rating, setRating] = useState(0); // Store the rating
+    const [rating, setRating] = useState({}); // Store the rating
 
     const handleRating = (rate, productId) => {
       setRating((prevRatings) => ({
@@ -47,7 +48,7 @@ const Wishlist = () => {
                    {[...Array(5)].map((_, index) => (
                            <span
                              key={index}
-                             className={index < rating ? "star filled" : "star"}
+                             className={index < (rating[item.id] || 0) ? "star filled" : "star"}
                              onClick={() => handleRating(index + 1, item.id)} // Set rating on click
                            >
                              ★
@@ -58,7 +59,33 @@ const Wishlist = () => {
                  <td className="price-new">{item.price}</td>
                  <td><span className="stock">In Stock</span></td>
                  <td><button className="todo">Add to cart</button></td>
-                 <td><a href="" className="trash" onClick={(e)=> {e.preventDefault();removeFromWishlist(item.id)}}><FaRegTrashAlt /></a></td>
+                 <td><a
+    href=""
+    className="trash"
+    onClick={(e) => {
+      e.preventDefault();
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "Do you really want to remove this product from your wishlist?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3BB77E',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          removeFromWishlist(item.id);
+          Swal.fire(
+            'Deleted!',
+            'The product has been removed from your wishlist.',
+            'success'
+          );
+        }
+      });
+    }}
+  >
+    <FaRegTrashAlt />
+  </a></td>
                </tr>
                ))}
               </tbody>

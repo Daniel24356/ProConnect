@@ -54,6 +54,7 @@ import man from '../../assets/man.svg';
 import box from '../../assets/box.svg';
 import products from '../../Data/products.json'
 import { useWishlist } from '../../context/WishlistContext';
+import Swal from 'sweetalert2';
 // Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -102,7 +103,16 @@ const Home = () => {
     const { addToWishlist } = useWishlist();
 
     const handleAdd = (product) => {
-      addToWishlist(product)
+      addToWishlist(product);
+
+      Swal.fire({
+        title: 'Added to Wishlist!',
+        text: `${product.name} has been added to your wishlist.`,
+        icon: 'success',
+        confirmButtonText: 'OK',
+        timer: 2000, // Auto-close after 2 seconds
+        timerProgressBar: true,
+      });
     }
     return (
         <>
