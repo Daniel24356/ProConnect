@@ -24,6 +24,7 @@ import icon9 from "../../assets/icon-9.png"
 import icon10 from "../../assets/icon-10.png"
 import { IoMenuSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useWishlist } from "../../context/WishlistContext";
 
 const Header = () => {
     const [isFixed, setIsFixed] = useState(false);
@@ -47,6 +48,9 @@ const Header = () => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
+
+    const {wishlist} = useWishlist();
+    const count = wishlist.length
 
      return (
         <>
@@ -108,7 +112,7 @@ const Header = () => {
                         <div className="wish">
                             <FaRegHeart className="s-icons" />
                             <Link to="/wishlist">Wishlist</Link>
-                            <div className="six">6</div>
+                            <div className="six">{count}</div>
                         </div>
                         <div className="carts">
                             <IoCartOutline className="s-icons" />
