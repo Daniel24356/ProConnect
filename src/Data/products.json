@@ -10,6 +10,13 @@
       "name": "Dairy-Free Cheddar Slices",
       "price": 3.25,
       "image": "./../assets/product2.jpg"
-    }
+    },
+
+    {
+        "id": 3,
+        "name": "Dairy-Free Cheddar Slices",
+        "price": 3.25,
+        "image": "./../assets/product2.jpg"
+      }
   ]
   

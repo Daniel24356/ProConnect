@@ -58,7 +58,7 @@ const Wishlist = () => {
                  <td className="price-new">{item.price}</td>
                  <td><span className="stock">In Stock</span></td>
                  <td><button className="todo">Add to cart</button></td>
-                 <td><a href="" className="trash" onClick={()=> removeFromWishlist}><FaRegTrashAlt /></a></td>
+                 <td><a href="" className="trash" onClick={(e)=> {e.preventDefault();removeFromWishlist(item.id)}}><FaRegTrashAlt /></a></td>
                </tr>
                ))}
               </tbody>

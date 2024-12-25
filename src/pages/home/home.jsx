@@ -89,20 +89,20 @@ const Home = () => {
 
     };
 
-    const [hoverText, setHoverText] = useState("");
-    const [hoverTexts1, setHoverTexts1] = useState("");
+    // const [hoverText, setHoverText] = useState("");
+    // const [hoverTexts1, setHoverTexts1] = useState("");
     const [hoverTexts, setHoverTexts] = useState("");
-    const [hoverText3, setHoverText3] = useState("");
-    const [hoverText4, setHoverText4] = useState("");
-    const [hoverText5, setHoverText5] = useState("");
-    const [hoverText6, setHoverText6] = useState("");
-    const [hoverText7, setHoverText7] = useState("");
-    const [hoverText8, setHoverText8] = useState("");
+    // const [hoverText3, setHoverText3] = useState("");
+    // const [hoverText4, setHoverText4] = useState("");
+    // const [hoverText5, setHoverText5] = useState("");
+    // const [hoverText6, setHoverText6] = useState("");
+    // const [hoverText7, setHoverText7] = useState("");
+    // const [hoverText8, setHoverText8] = useState("");
 
     const { addToWishlist } = useWishlist();
 
-    const handleAdd = () => {
-      addToWishlist(products)
+    const handleAdd = (product) => {
+      addToWishlist(product)
     }
     return (
         <>
@@ -226,7 +226,7 @@ const Home = () => {
                 </div>
 
                 <div className='try'>
-                  <div className='card-div'>
+                  {/* <div className='card-div'>
                     <div className="product-card">
 
                       <div className="tip1">
@@ -284,7 +284,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
 
 
@@ -322,7 +322,7 @@ const Home = () => {
                             className="icon1"
                             onMouseEnter={() => setHoverTexts("Add To Wishlist")}
                             onMouseLeave={() => setHoverTexts("")}
-                            onClick={handleAdd}
+                            onClick={()=> handleAdd(product)}
                           >
                             <FaRegHeart className='fa1' />
                             {hoverTexts === "Add To Wishlist" && <div className="tooltip1">{hoverTexts}</div>}
@@ -369,7 +369,7 @@ const Home = () => {
 
 
 
-                  {/* third-card */}
+                  {/* third-card
 
                   <div className='card-div'>
                     <div className="product-card4">
@@ -441,7 +441,7 @@ const Home = () => {
 
                   {/* fourth-card */}
 
-                  <div className='card-div'>
+                  {/* <div className='card-div'>
                     <div className="product-design1">
 
                       <div className="badges1"><span>-37%</span></div>
@@ -503,13 +503,13 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>  */}
 
 
 
 
 
-                  {/* fifth-card */}
+                  {/* fifth-card
 
 
                   <div className='card-div'>
@@ -586,7 +586,7 @@ const Home = () => {
 
                   {/* six-card */}
 
-                  <div className='card-div'>
+                  {/* <div className='card-div'>
                     <div className="product-card6">
 
                       <div className="tip1">
@@ -644,13 +644,13 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
 
 
                   {/* seven-card */}
 
-                  <div className='card-div'>
+                  {/* <div className='card-div'>
                     <div className="product-design7">
 
                       <div className="badges1"><span>-37%</span></div>
@@ -712,14 +712,14 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
 
 
                   {/* Eight-card */}
 
 
-                  <div className='card-div'>
+                  {/* <div className='card-div'>
                     <div className="product-design8">
 
                       <div className="badges"><span>Hot</span></div>
@@ -781,7 +781,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>  */}
 
 
 
