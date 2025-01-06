@@ -96,6 +96,13 @@
     font-weight: 700;
 }
 
+.cart-stuff {
+    color: rgb(122, 120, 120);
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
 .shop-txt {
     color: rgb(102, 187, 141);
     font-weight: 700;

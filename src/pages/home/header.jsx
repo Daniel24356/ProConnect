@@ -106,22 +106,22 @@ const Header = () => {
                     <div className="thr-head">
                         <div className="com">
                             <GrCycle className="s-icons" />
-                            <Link to="/comparable">Compare</Link>
+                            <Link to="/comparable" className="cart-stuff">Compare</Link>
                             <div className="three">3</div>
                         </div>
                         <div className="wish">
                             <FaRegHeart className="s-icons" />
-                            <Link to="/wishlist">Wishlist</Link>
+                            <Link to="/wishlist" className="cart-stuff">Wishlist</Link>
                             <div className="six">{count}</div>
                         </div>
                         <div className="carts">
                             <IoCartOutline className="s-icons" />
-                            <Link to="/cart">Cart</Link>
+                            <Link to="/cart" className="cart-stuff">Cart</Link>
                             <div className="two">2</div>
                         </div>
                         <div className="acc">
                             <FaRegUser className="s-icons" />
-                            <Link to="/signup">Account</Link>
+                            <Link to="/signup" className="cart-stuff">Account</Link>
                         </div>
                     </div>
                 </div>
