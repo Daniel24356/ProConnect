@@ -121,7 +121,7 @@ const Header = () => {
                         </div>
                         <div className="acc">
                             <FaRegUser className="s-icons" />
-                            <p>Account</p>
+                            <Link to="/signup">Account</Link>
                         </div>
                     </div>
                 </div>

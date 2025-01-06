@@ -2,6 +2,7 @@ import './Signup.css'
 import facebook from '../../assets/facebook.svg'
 import googlepic from '../../assets/google.svg'
 import apple from '../../assets/apple.svg'
+import { Link } from 'react-router-dom'
 const Signup = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Signup = () => {
                  <div className="left-form">
                  <div className="right-login">
                  <h1 className="my">Create an Account</h1>
-                 <p className="create">Already have an account? <a href="" className="one">Login</a></p>
+                 <p className="create">Already have an account? <Link className='one' to="/login">Login</Link></p>
                  <input type="text" className="name" placeholder='Username *'/>
                  <input type="text" className="name" placeholder='Email *'/>
                  <input type="text" className="name" placeholder='Password *'/>
