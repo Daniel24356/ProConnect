@@ -25,6 +25,7 @@ import icon10 from "../../assets/icon-10.png"
 import { IoMenuSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useWishlist } from "../../context/WishlistContext";
+import { useComparable } from "../../context/ComparableContext";
 
 const Header = () => {
     const [isFixed, setIsFixed] = useState(false);
@@ -51,6 +52,9 @@ const Header = () => {
 
     const {wishlist} = useWishlist();
     const count = wishlist.length
+
+    const {comparable} = useComparable();
+    const count2 = comparable.length
 
      return (
         <>
@@ -107,7 +111,7 @@ const Header = () => {
                         <div className="com">
                             <GrCycle className="s-icons" />
                             <Link to="/comparable" className="cart-stuff">Compare</Link>
-                            <div className="three">3</div>
+                            <div className="three">{count2}</div>
                         </div>
                         <div className="wish">
                             <FaRegHeart className="s-icons" />
