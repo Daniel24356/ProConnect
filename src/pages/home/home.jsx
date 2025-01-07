@@ -54,6 +54,7 @@ import man from '../../assets/man.svg';
 import box from '../../assets/box.svg';
 import products from '../../Data/products.json'
 import { useWishlist } from '../../context/WishlistContext';
+import { useComparable } from '../../context/ComparableContext';
 import Swal from 'sweetalert2';
 // Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -101,6 +102,7 @@ const Home = () => {
     // const [hoverText8, setHoverText8] = useState("");
 
     const { addToWishlist } = useWishlist();
+    const { addToComparable } = useComparable();
 
     const handleAdd = (product) => {
       addToWishlist(product);
@@ -113,7 +115,22 @@ const Home = () => {
         timer: 2000, // Auto-close after 2 seconds
         timerProgressBar: true,
       });
+
     }
+
+    const handleCompare = (product) => {
+      addToComparable(product);
+
+      Swal.fire({
+        title: 'Added to Comparison!',
+        text: `${product.name} has been added to your Comparison.`,
+        icon: 'success',
+        confirmButtonText: 'OK',
+        timer: 2000, // Auto-close after 2 seconds
+        timerProgressBar: true,
+      });
+  }
+     
     return (
         <>
         <Header/>
@@ -342,6 +359,8 @@ const Home = () => {
                             className="icon1"
                             onMouseEnter={() => setHoverTexts("Add To Compare")}
                             onMouseLeave={() => setHoverTexts("")}
+                            // onClick={()=> handleAddNew(product)}
+                            onClick={() => handleCompare(product)}
                           >
                             <FaShuffle className='fa1' />
                             {hoverTexts === "Add To Compare" && <div className="tooltip1">{hoverTexts}</div>}

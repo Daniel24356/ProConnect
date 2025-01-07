@@ -155,10 +155,11 @@ td {
   .trash {
     color: grey;
     text-decoration: none;
-    border-bottom: none;
+    border: none;
+    background-color: white;
   }
 
-  .second {
+  /* .second {
     border-bottom: none;
   }
 
@@ -168,7 +169,7 @@ td {
 
   .typeshi-new {
     border: none;
-  }
+  } */
 
   @media screen and (max-width: 995px){
     .overall {
