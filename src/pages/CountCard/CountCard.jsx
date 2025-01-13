@@ -62,12 +62,12 @@ const CountdownCard = () => {
 
                     <div className="info1">
                         <span className="product-header1"><h2 className='text-truncate1'>Seeds of Change Organic Quinoe</h2></span>
-                        <div className="count-content-info1">
-                        <div className='rating1'>
-                            <Rating totalStars={5}></Rating>
-                        </div>
-                        <span className="">(10)</span>
-                        </div>
+                        <div className="content-info11">
+                          <div className='rating11'>
+                            <div className='product-rating121' style={{ width: "50%" }}></div>
+                            </div>
+                            <span className="">(10)</span>
+                            </div>
                         <div className="sold">
                             <span>Sold By <a href="#" className='a'>GoPro</a></span>
                         </div>
@@ -112,12 +112,12 @@ const CountdownCard = () => {
 
               <div className="info1">
                   <span className="product-header1"><h2 className='text-truncate1'>Seeds of Change Organic Quinoe</h2></span>
-                  <div className="count-content-info1">
-                  <div className='rating1'>
-                      <Rating totalStars={5}></Rating>
-                  </div>
-                  <span className="">(10)</span>
-                  </div>
+                  <div className="content-info11">
+                          <div className='rating11'>
+                          <div className='product-rating121' style={{ width: "44.44444%" }}></div>
+                          </div>
+                          <span className="">(10)</span>
+                          </div>
                   <div className="sold">
                       <span>Sold By <a href="#" className='a'>GoPro</a></span>
                   </div>
@@ -162,12 +162,12 @@ const CountdownCard = () => {
 
               <div className="info1">
                   <span className="product-header1"><h2 className='text-truncate1'>Seeds of Change Organic Quinoe</h2></span>
-                  <div className="count-content-info1">
-                  <div className='rating1'>
-                      <Rating totalStars={5}></Rating>
-                  </div>
-                  <span className="">(10)</span>
-                  </div>
+                  <div className="content-info11">
+                                              <div className='rating11'>
+                                                <div className='product-rating121' ></div>
+                                              </div>
+                                              <span className="">(10)</span>
+                                            </div>
                   <div className="sold">
                       <span>Sold By <a href="#" className='a'>GoPro</a></span>
                   </div>
@@ -212,12 +212,12 @@ const CountdownCard = () => {
 
               <div className="info1">
                   <span className="product-header1"><h2 className='text-truncate1'>Seeds of Change Organic Quinoe</h2></span>
-                  <div className="count-content-info1">
-                  <div className='rating1'>
-                      <Rating totalStars={5}></Rating>
-                  </div>
-                  <span className="">(10)</span>
-                  </div>
+                  <div className="content-info11">
+                            <div className='rating11'>
+                            <div className='product-rating121' style={{ width: "52%" }}></div>
+                            </div>
+                            <span className="">(10)</span>
+                          </div>
                   <div className="sold">
                       <span>Sold By <a href="#" className='a'>GoPro</a></span>
                   </div>
@@ -226,7 +226,7 @@ const CountdownCard = () => {
                   <span className='span1'>$1,845.00 <p className='old-price'>$1,845.00</p>
 
                   </span>
-                  <button className='count-cart'> <IoCartOutline style={{ fontSize: "16px"}} /> Add</button>
+                  <button className='count-cart'> <IoCartOutline style={{ fontSize: "26px"}} /> Add</button>
               </div>
               </div>
               </div> 

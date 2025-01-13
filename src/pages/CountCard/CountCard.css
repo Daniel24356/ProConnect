@@ -306,15 +306,13 @@
   height: 39px;
   gap: 6px;
   color: #3BB77E;
+  transition: all .3s linear 0s;
 }
 .count-cart:hover{
   background-color: #3BB77E;
   box-shadow: 5px 5px 15px rgba(0,0,0,.05);
   color: #fff;
   transform: translateY(-3px);
-  --animate-duration: 1s;
-  --animate-repeat: 1;
-  animation-delay: 0.2s;
 }
 /* Container for icons */
 .icon-container1 {

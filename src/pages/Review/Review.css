@@ -1,0 +1,129 @@
+.review-list-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .review-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .review-item img.rounded-circle {
+    border-radius: 50%;
+  }
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+  
+  .review-item__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .review-item__rating {
+    margin: 10px 0;
+  }
+  
+  .bb-product-rating span {
+    display: inline-block;
+    height: 10px;
+    /* background: #ffc107; */
+    border-radius: 5px;
+  }
+  
+  .review-item__body {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .review-item__images {
+    margin-top: 0px;
+  }
+  
+
+  .img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+  }  
+  
+  .mb{
+    width: 804.667px;
+    font-weight: 700;
+    height: 28px;
+    font-size: 24px;
+    color: rgb(37, 61, 78);
+    display: block;
+    font-family: Quicksand, sans-serif;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+  }
+
+  .mb-32{
+    width: 804.667px;
+    font-weight: 100;
+    height: 300px;
+    font-size: 24px;
+    color: rgb(37, 61, 78);
+    display: flex;
+    font-family: Quicksand, sans-serif;
+    /* border: 1px solid black; */
+    gap: 2%;
+  }
+  .fw-medium{
+    color: rgb(126, 126, 126);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+  }
+  .review-item__header{
+    width: 504.667px;
+    /* border: 1px solid black; */
+    display: flex;
+  }
+
+  .text-muted{
+    color: rgb(182, 182, 182);
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .review-item__body{
+    width: 604.667px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 24px;
+    font-size: 16px;
+    display: block;
+    font-family: Lato, sans-serif;
+  }
+  .review-images{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+  }
+
+  .page_speed_266637317 {
+    --bb-rating-size: 80px;
+}
+
+.bb-product-rating {
+    --bb-rating-size: 80px;
+    height: calc(var(--bb-rating-size) / 5);
+    position: relative;
+    width: var(--bb-rating-size);
+}

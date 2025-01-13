@@ -1,0 +1,114 @@
+.bannersfake{
+    padding-top: 60px !important;
+    width: 1240px;
+    font-weight: 400;
+    height: 294.115px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato, sans-serif;
+    /* border: 1px solid black; */
+
+}
+.container222{
+    width: 1240px;
+    max-width: 1610px;
+    font-weight: 400;
+    height: 234.115px;
+    line-height: 24px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato, sans-serif;
+    /* border: 1px solid black; */
+}
+.justify-content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    gap: 15px;
+    /* border: 1px solid black; */
+}
+
+
+element.style {
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+.bannersfake-img, .bannersfake-img img {
+    border-radius: 10px;
+}
+.bannersfake-img {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    /* border: 1px solid black; */
+    width: 389.323px;
+}
+.page_speed_390100536 {
+    text-align: center;
+}
+                    
+.article{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+    color:#3BB77E;
+    /* border: 1px solid black; */
+}
+
+.might{
+    color: rgb(59, 183, 126);
+    cursor: pointer;
+    display: inline;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    visibility: visible;
+    width: auto;
+}
+.page_speed_2011521791{
+    width: 389.323px;
+    text-align: center;
+    font-weight: 400;
+    height: 228.115px;
+    line-height: 24px;  
+    cursor: pointer;
+    display: inline;
+}
+.bannersfake-img img {
+    border-radius: 10px;
+}
+
+.page_speed_2011521791 {
+    max-width: 100%;
+}
+.col-lg-45 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+ .banner-text {
+    padding: 0 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.banner-text h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    min-height: 100px;
+}
+
+.banner-text h4:hover{
+        transform: translateY(-3px);
+}
+
+.q1{
+    margin-left: 5px;
+    transition-duration: .3s;
+    font-size: 14px !important;
+}
