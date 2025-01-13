@@ -8,7 +8,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { FiHeadphones } from "react-icons/fi";
-import { FaFireAlt } from "react-icons/fa";
+// import { FaFireAlt } from "react-icons/fa";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { useEffect, useState } from "react";
@@ -22,6 +22,26 @@ import icon7 from "../../assets/product-categories/icon-7.png"
 import icon8 from "../../assets/product-categories/icon-8.png"
 import icon9 from "../../assets/product-categories/icon-9.png"
 import icon10 from "../../assets/product-categories/icon-10.png"
+
+//   import zerd from "../../assets/zerds.png"
+  import './header.css'
+  
+// import Nflag from "../../assets/icons8-nigeria-flag-48.png"
+// import icon1 from "../../assets/icon-1.png"
+// import icon2 from "../../assets/icon-2.png"
+// import icon3 from "../../assets/icon-3.png"
+// import icon4 from "../../assets/icon-4.png"
+// import icon5 from "../../assets/icon-5.png"
+// import icon6 from "../../assets/icon-6.png"
+// import icon7 from "../../assets/icon-7.png"
+// import icon8 from "../../assets/icon-8.png"
+// import icon9 from "../../assets/icon-9.png"
+// import icon10 from "../../assets/icon-10.png"
+import { IoMenuSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useWishlist } from "../../context/WishlistContext";
+import { useComparable } from "../../context/ComparableContext";
+
 
 const Header = () => {
     const [isFixed, setIsFixed] = useState(false);
@@ -46,6 +66,12 @@ const Header = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
 
+    const {wishlist} = useWishlist();
+    const count = wishlist.length
+
+    const {comparable} = useComparable();
+    const count2 = comparable.length
+
      return (
         <>
             <div className="top-div">
@@ -54,8 +80,6 @@ const Header = () => {
                     <p className="trck-txt">Order Tracking</p>
                 </div>
                 
-                {/* <div className="rotating-text-container">
-                <div className="rotating-text"> */}
                 <div className="trend-bx">
                     <IoIosNotificationsOutline className="not-icon" />
                     <p> 
@@ -64,10 +88,7 @@ const Header = () => {
                     <span className="shop-txt">Shop now</span>
                     </p>
                 </div>
-                {/* <span className="text">Super value Deals- Save more with coupons</span>
-                <span className="text">Get great devices up to 50% off View details</span>
-                </div>
-                </div> */}
+
                 <div className="top-need">
                     <p className="need-txt">Need help?</p>
                     <p className="call-txt">Call Us: <span className="n-txt">1900-888</span></p>
@@ -83,8 +104,13 @@ const Header = () => {
                 </div>
             </div>
             <nav className={`header ${isFixed ? "fixed" : ""}`}>
+                <div className="menu-logo">
+                    <div className="menu">
+                        <IoMenuSharp className="menu-icon"/>
+                    </div>
                 <div>
                     <img className="zerd-img" src={zerd} alt="" />
+                </div>
                 </div>
                 <div className="head-inner">
                     <div className="search-div">
@@ -100,22 +126,22 @@ const Header = () => {
                     <div className="thr-head">
                         <div className="com">
                             <GrCycle className="s-icons" />
-                            <p>Compare</p>
-                            <div className="three">3</div>
+                            <Link to="/comparable" className="cart-stuff">Compare</Link>
+                            <div className="three">{count2}</div>
                         </div>
                         <div className="wish">
                             <FaRegHeart className="s-icons" />
-                            <p>Wishlist</p>
-                            <div className="six">6</div>
+                            <Link to="/wishlist" className="cart-stuff">Wishlist</Link>
+                            <div className="six">{count}</div>
                         </div>
                         <div className="carts">
                             <IoCartOutline className="s-icons" />
-                            <p>Cart</p>
+                            <Link to="/cart" className="cart-stuff">Cart</Link>
                             <div className="two">2</div>
                         </div>
                         <div className="acc">
                             <FaRegUser className="s-icons" />
-                            <p>Account</p>
+                            <Link to="/signup" className="cart-stuff">Account</Link>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ function Rowbanner() {
   return (
     <section className="bannersfake">
       <div className="container222">
-        <div className=" justify-content-center">
+        <div className=" justify-content-center23">
           <div className="col-lg-45">
             <div
               className="bannersfake-img wow animate__ animate__fadeInUp animated"
@@ -20,7 +20,7 @@ function Rowbanner() {
                   rel="noopener noreferrer"
                   title="Banner"
                 >
-                  <picture className='might'>
+                  <picture className='mighty'>
                     <source
                       srcSet="https://nest.botble.com/storage/promotion/1.png"
                       media="(min-width: 1200px)"
@@ -42,7 +42,7 @@ function Rowbanner() {
                   </picture>
                 </a>
               </div>
-              <div className="banner-text">
+              <div className="banner-text23">
                 <h4>
                   Everyday Fresh &amp; <br />
                   Clean with Our <br />
@@ -95,7 +95,7 @@ function Rowbanner() {
                   </picture>
                 </a>
               </div>
-              <div className="banner-text">
+              <div className="banner-text23">
                 <h4>Make your Breakfast Healthy and Easy</h4>
                 <a
                   href="https://nest.botble.com/ac-201244e3d336c93c892dc4822a8cc92a1a072414/ILSFJVYFGCPZ"
@@ -144,7 +144,7 @@ function Rowbanner() {
                   </picture>
                 </a>
               </div>
-              <div className="banner-text">
+              <div className="banner-text23">
                 <h4>The best Organic Products Online</h4>
                 <a
                   href="https://nest.botble.com/ac-efb93f2f7db80161552ce246c6018b57f41096d0/ILSDKVYFGXPH"

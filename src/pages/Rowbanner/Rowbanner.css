@@ -1,6 +1,6 @@
 .bannersfake{
     padding-top: 60px !important;
-    width: 1240px;
+    width: 100%;
     font-weight: 400;
     height: 294.115px;
     line-height: 24px;
@@ -12,7 +12,7 @@
 
 }
 .container222{
-    width: 1240px;
+    width: 100%;
     max-width: 1610px;
     font-weight: 400;
     height: 234.115px;
@@ -24,7 +24,7 @@
     font-family: Lato, sans-serif;
     /* border: 1px solid black; */
 }
-.justify-content-center {
+.justify-content-center23 {
     display: flex;
     align-items: center;
     justify-content: center !important;
@@ -59,7 +59,7 @@ element.style {
     /* border: 1px solid black; */
 }
 
-.might{
+.mighty{
     color: rgb(59, 183, 126);
     cursor: pointer;
     display: inline;
@@ -71,7 +71,7 @@ element.style {
     width: auto;
 }
 .page_speed_2011521791{
-    width: 389.323px;
+    width: 100%;
     text-align: center;
     font-weight: 400;
     height: 228.115px;
@@ -81,6 +81,8 @@ element.style {
 }
 .bannersfake-img img {
     border-radius: 10px;
+    width: 579.323px;
+    height: 232.25px;
 }
 
 .page_speed_2011521791 {
@@ -90,20 +92,22 @@ element.style {
     flex: 0 0 auto;
     width: 33.33333333%;
 }
- .banner-text {
+ .banner-text23 {
     padding: 0 50px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
 }
-.banner-text h4 {
+.banner-text23 h4 {
     font-weight: 700;
     margin-bottom: 15px;
     min-height: 100px;
+    font-size: 24px;
 }
 
-.banner-text h4:hover{
+
+.banner-text23 h4:hover{
         transform: translateY(-3px);
 }
 

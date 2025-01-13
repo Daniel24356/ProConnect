@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wishlist {
+    padding: 100px;
+}
+
+.my {
+    font-size: 56px;
+    color: #253D4E;
+}
+
+.main-table {
+  border: none;
+}
+
+.products {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #7E7E7E;
+}
+
+.five {
+    color: #3BB77E;
+}
+
+.mainheading {
+    /* border: 1px solid #e9ecef; */
+    background-color: #ececec;
+    /* column-span: all; */
+}
+
+th {
+    padding: 18px;
+    border: none;
+    text-align: left;
+    border: 2px solid #e9ecef;
+    font-size: 20px;
+}
+
+thead {
+    border: none;
+    border-radius: 10px;
+}
+
+tr {
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+
+
+.each {
+     border: 1px solid #e9ecef;
+     padding: 18px;
+}
+
+td {
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 120px;
+    border: 1px solid #ececec;
+    border-radius: 15px;
+}
+
+.img-td {
+  border-left: 1px solid #B6B6B6;
+}
+
+.link {
+    color: #3BB77E;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.link:hover {
+    color: #ffc107;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px; /* Space between stars and text */
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 20px; /* Adjust the size of stars */
+    color: #d3d3d3; /* Default gray color */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star.filled {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
+  .star:hover,
+  .star.filled:hover ~ .star {
+    color: #ffa500; /* Orange on hover */
+    cursor: pointer;
+  }
+
+  .price-new {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3BB77E;
+    padding-right: 90px;
+  }
+
+  .describe {
+    padding-right: 150px;
+  }
+
+  .stock {
+    color: #3BB77E;
+    background-color: #DEF9EC;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 15px;
+  }
+
+  .todo {
+    background-color: #3BB77E;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+    border: none;
+  }
+
+  .todo:hover {
+    background-color: #ffc107;
+  }
+
+  .trash {
+    color: grey;
+    text-align: right;
+    padding-left: 60px;
+    font-size: 15px;
+  }
+
+  .main-table {
+    padding-top: 50px;
+  }
+
+  .stocks {
+    color: #f74b81;
+    background-color: #fde0e9;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 15px;
+  }
+
+  .todos {
+    background-color: #3e5379;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 1511px){
+      .describe {
+        padding-right: 100px;
+      }
+  }
+
+  @media screen and (max-width: 1460px){
+      .describe {
+        padding-right: 50px;
+      }
+  }
+
+  @media screen and (max-width: 1415px){
+      .price {
+        padding-right: 40px;
+      }
+  }
+
+  @media screen and (max-width: 1371px){
+       .describe {
+         padding-right: 20px;
+       }
+  }
+
+  @media screen and (max-width: 1334px){
+       td {
+        padding: 10px;
+       }
+  }
+
+  @media screen and (max-width: 1275px){
+      .wishlist {
+        padding: 50px;
+      }
+  }
+
+  @media screen and (max-width: 1191px){
+      td {
+        padding: 5px;
+      }
+  }
+
+  @media screen and (max-width: 1149px){
+       .price {
+        font-size: 35px;
+       }
+  }
+
+  @media screen and (max-width: 1132px){
+      .wishlist {
+        padding: 20px;
+      }
+  }
