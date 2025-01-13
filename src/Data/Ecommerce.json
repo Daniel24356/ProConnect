@@ -1,0 +1,148 @@
+{
+    "productData":[
+        {
+            "id": "1",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "GoPro",
+            "title": "Seeds of Change Organic Quinoe",
+            "desc": "product is very sweet and juicy",
+            "price":{
+              "currentPrice": "1845.00",
+              "oldPrice": "1200.00"
+            } 
+        },
+        {
+            "id": "2",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "Dangote",
+            "title": "Shoes from nike",
+            "desc": "shoe is very sexy",
+            "price":{
+              "currentPrice": "1505.00",
+              "oldPrice": "1300.00"
+            } 
+        },
+        {
+            "id": "3",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "adidas",
+            "title": "jordans fours",
+            "desc": "it is a basketball shoe and makes you jump higher",
+            "price":{
+              "currentPrice": "1345.00",
+              "oldPrice": "1100.00"
+            } 
+        },
+        {
+            "id": "4",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "Why",
+            "title": "You dont have sense",
+            "desc": "why dont you have sense",
+            "price":{
+              "currentPrice": "1745.00",
+              "oldPrice": "1000.00"
+            } 
+        },
+        {
+            "id": "5",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "GoPro",
+            "title": "Seeds of Change Organic Quinoe",
+            "desc": "product is very sweet and juicy",
+            "price":{
+              "currentPrice": "1845.00",
+              "oldPrice": "1200.00"
+            } 
+        },
+        {
+            "id": "6",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "GoPro",
+            "title": "Seeds of Change Organic Quinoe",
+            "desc": "product is very sweet and juicy",
+            "price":{
+              "currentPrice": "1845.00",
+              "oldPrice": "1200.00"
+            } 
+        },
+        {
+            "id": "7",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "GoPro",
+            "title": "Seeds of Change Organic Quinoe",
+            "desc": "product is very sweet and juicy",
+            "price":{
+              "currentPrice": "1845.00",
+              "oldPrice": "1200.00"
+            } 
+        },
+        {
+            "id": "8",
+            "image": {
+                "img1": "/assets/product-categories/icon-1.png",
+                "img2": "/assets/product-categories/icon-1.png"
+            },
+            "stars":{
+                 "starsImg": "/assets/active-star.png",
+                 "starsText": "5"
+            },
+            "retailerName": "GoPro",
+            "title": "Seeds of Change Organic Quinoe",
+            "desc": "product is very sweet and juicy",
+            "price":{
+              "currentPrice": "1845.00",
+              "oldPrice": "1200.00"
+            } 
+        }
+    ]
+}

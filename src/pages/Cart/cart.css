@@ -50,6 +50,9 @@
     margin-top: 35px;
     gap: 20px;
 }
+.prod-sall{
+    display: none;
+}
 .prod-border{
     width: 120px;
     height: 120px;
@@ -105,9 +108,28 @@
     border: 2px solid rgb(59, 183, 126);
     border-radius: 6px;
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.dte-icons{
+    font-size: 25px;
+    color: rgb(126, 126, 126);
+}
+.num-prod p{
     font-size: 16px;
     color: rgb(59, 183, 126);
     font-weight: 700;
+}
+.arrow-icons{
+    /* display: flex;
+    flex-direction: column;
+    gap: 12px; */
+}
+.arr-grav{
+    font-size: 15px;
+    color: rgb(59, 183, 126);
 }
 .pr-check{
     height: 240.198px;
@@ -157,6 +179,10 @@
     font-weight: 700;
     font-size: 14px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 .cont-shop{
     margin-top: 30px;
@@ -169,6 +195,10 @@
     font-size: 14px;
     border-radius:4px ;
     margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .app-coupon{
     margin-top: 50px;
@@ -204,10 +234,137 @@
     color: white;
     font-weight: 600;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 .coupon-div{
     margin-top: 30px;
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+@media screen and (max-width: 1224px){
+   .pr-check{
+    width: 330px;
+   }
+   .pr-check button{
+    width: 280px;
+   }
+}
+@media screen and (max-width: 1187px){
+    .pr-check{
+        width: 300px;
+       }
+       .pr-check button{
+        width: 250px;
+       }
+}
+@media screen and (max-width: 1150px){
+    .pr-check{
+        width: 250px;
+       }
+       .pr-check button{
+        width: 220px;
+       }
+}
+@media screen and (max-width: 1110px){
+    .pr-check{
+        width: 200px;
+       }
+       .pr-check button{
+        width: 170px;
+        gap: 7px;
+       }
+       .tax-seconds{
+        font-size: 20px;
+       }
+       .cart-all{
+        gap: 25px;
+       }
+}
+@media screen and (max-width: 1011px){
+       .cart-all{
+        flex-direction: column;
+       }
+       .cart-head{
+        width: 100%;
+       }
+       .pr-check{
+        width: 100%;
+       }
+       .pr-check button{
+        width: 98%;
+        gap: 15px;
+       }
+}
+@media screen and (max-width: 629px){
+      .cart-prod{
+        gap: 17px;
+      }
+      .num-prod{
+        width: 60px;
+        gap: 20px;
+      }
+}
+@media screen and (max-width: 576px){
+     .cart-bord{
+        display: none;
+     }
+     .prod-sall{
+        background-color: rgb(226, 234, 236);
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+     }
+     .seed-me{
+        margin-top: 47px;
+     }
+     .seeds-change{
+        font-weight: 800;
+        font-size: 22px;
+        text-align: center;
+     }
+     .sold-change{
+        text-align: center;
+        margin-top: 13px;
+     }
+     .weight-kg{
+        text-align: center;
+        margin-top: 13px;
+        font-size: 17px;
+        font-weight: 500;
+        color: gray;
+     }
+     .pr-unit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+     }
+     .unit-div{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+     .prod-border{
+        width: 180px;
+        height: 180px;
+        background-color: white;
+     }
+     .prod-border img{
+        width: 170px;
+        height: 170px;
+     }
+     .prod-small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
 }

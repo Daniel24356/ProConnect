@@ -23,8 +23,11 @@ import icon8 from "../../assets/icon-8.png"
 import icon9 from "../../assets/icon-9.png"
 import icon10 from "../../assets/icon-10.png"
 import { IoMenuSharp } from "react-icons/io5";
+import { useCart } from "react-use-cart";
 
 const Header = () => {
+
+    const {totalItems} = useCart()
     const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
@@ -112,7 +115,7 @@ const Header = () => {
                         <div className="carts">
                             <IoCartOutline className="s-icons" />
                             <p>Cart</p>
-                            <div className="two">2</div>
+                            <div className="two">{totalItems}</div>
                         </div>
                         <div className="acc">
                             <FaRegUser className="s-icons" />
