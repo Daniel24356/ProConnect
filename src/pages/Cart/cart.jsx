@@ -1,7 +1,7 @@
-  import CountdownCard from '../CountCard/CountCard'
+//   import CountdownCard from '../CountCard/CountCard'
 import Footer from '../home/Footer'
 import './cart.css'
-import fruit from '../../assets/seedbag2.jpg';
+import fruit from '../../assets/promotion/seedbag2.jpg';
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineDelete } from "react-icons/md";
@@ -10,6 +10,9 @@ import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { FaRegEnvelopeOpen } from "react-icons/fa";
 import { useState } from 'react';
 import { useCart } from 'react-use-cart';
+import Header from '../home/header';
+import { Link } from 'react-router-dom';
+// import fruit from '../../assets/seedbag2.jpg';
 
   const Cart = () => {
 
@@ -25,7 +28,15 @@ import { useCart } from 'react-use-cart';
 
     } = useCart();
 
-         if(isEmpty) return <h1>Your Cart is Empty</h1>
+         if(isEmpty) return <div className=''>
+            <Header/>
+        <div className='cart-boxs'>
+        <h1>Your Cart</h1>
+        <p>There are <span>0</span> products in your cart</p>
+        </div> 
+          <h1 className='emp-cart'>Your Cart is Empty</h1>
+         </div>
+          
 
     const[count, setCount]=useState(0);
     const handleCountIncrement=()=>{
@@ -41,10 +52,11 @@ import { useCart } from 'react-use-cart';
 
     return(
         <>
+        <Header/>
         <div className='cart-div'>
         <div className='cart-box'>
         <h1>Your Cart</h1>
-        <p>There are <span>4</span> products in your cart</p>
+        <p>There are <span>{totalItems}</span> products in your cart</p>
         </div> 
        <section>
         <div className='cart-all'>
@@ -72,15 +84,15 @@ import { useCart } from 'react-use-cart';
                     <p className='prod-weight'>(Weight: 4KG, Boxes:{item.quantity} Boxes)</p>
                  </div>
                 </div>
-                <h1 className='unit-price'>{item.price.currentPrice}</h1>
+                <h1 className='unit-price'>${item.price.currentPrice}</h1>
                 <div className='num-prod'>
                     <p> {item.quantity}</p>
                     <div className='arrow-icons'>
-                       <IoIosArrowUp onClick={() => updateItemQuantity(item.id, item.quantity -1)} className='arr-grav'/>
-                        <IoIosArrowDown  onClick={() => updateItemQuantity(item.id, item.quantity +1)} className='arr-grav'/>
+                       <IoIosArrowUp onClick={() => updateItemQuantity(item.id, item.quantity +1)} className='arr-grav'/>
+                        <IoIosArrowDown  onClick={() => updateItemQuantity(item.id, item.quantity -1)} className='arr-grav'/>
                     </div>
                 </div>
-                <h1 className='sub-total'>{cartTotal}</h1>
+                <h1 className='sub-total'>${(item.quantity) * (item.price.currentPrice)}</h1>
                <MdOutlineDelete  onClick={() => removeItem(item.id)} className='dte-icons'/>
             </div>
                 </>
@@ -141,7 +153,7 @@ import { useCart } from 'react-use-cart';
         </div>
        </div>
        <button>
-        Proceed To Checkout
+        <Link className='check-txt' to="/checkout">Proceed To Checkout</Link>
         <FaArrowRightFromBracket/>
         </button>
         </div>

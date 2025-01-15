@@ -150,6 +150,7 @@
     height: 702px;
     width: 451px;
     padding: 25px 20px;
+    border-radius: 5px;
 }
 .prod-div{
     display: flex;
@@ -172,10 +173,17 @@
   font-size: 14px;
   font-weight: 500;
 }
-.prod-div div{
+.demo-div{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.star-divs{
+  display: flex;
+  gap: 10px;
+}
+.star-divs div img{
+  width: 15px;
 }
 .star-divs p{
    font-size: 13px;
@@ -187,17 +195,35 @@
 }
 
 .prod-img{
-    width: 78.75px;
-    height: 78.75px;
+    width: 85.75px;
+    height: 85.75px;
     border: 1px solid gainsboro;
     border-radius: 7px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.num-check{
+  position: absolute;
+  top: -5px;
+  right:-5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: rgb(162,162,162);
+  border-radius: 50%;
 }
 .prod-img img{
-  width: 65px;
+  width: 80px;
+}
+.price-s{
+  padding-left: 25px;
+  font-size: 15px;
 }
 .seed-txt{
   font-size: 14px;
@@ -207,16 +233,18 @@
 .weig-txt{
   font-size: 13px;
   margin-top: 5px;
+  white-space: nowrap;
 }
 .nums-div{
-    width: 70px;
-    height: 28px;
+    width: 73px;
+    height: 32px;
     border: 1px solid gainsboro;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
     margin-top: 12px;
+    padding: 5px 2px;
 }
 .ship-txt{
     font-size: 16px;
@@ -268,8 +296,9 @@
   font-weight: 700;
 }
 .total-new{
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 700;
+  color: rgb(83, 81, 79);
 }
 .subs-total div{
   display: flex;

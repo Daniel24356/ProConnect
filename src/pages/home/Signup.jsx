@@ -2,16 +2,19 @@ import './Signup.css'
 import facebook from '../../assets/facebook.svg'
 import googlepic from '../../assets/google.svg'
 import apple from '../../assets/apple.svg'
+import { Link } from 'react-router-dom'
+import Header from './header'
 const Signup = () => {
   return (
     <>
+    <Header/>
       <section className="login-section">
           <div className="login-div">
               <form action="" className='formshi'>
                  <div className="left-form">
                  <div className="right-login">
                  <h1 className="my">Create an Account</h1>
-                 <p className="create">Already have an account? <a href="" className="one">Login</a></p>
+                 <p className="create">Already have an account? <Link className='one' to="/login">Login</Link></p>
                  <input type="text" className="name" placeholder='Username *'/>
                  <input type="text" className="name" placeholder='Email *'/>
                  <input type="text" className="name" placeholder='Password *'/>
@@ -56,11 +59,11 @@ const Signup = () => {
                  </div>
 
                  <div className="socials-signup">
-                     <a href="" className="face"><img src={facebook} alt="" className='facebook-link'/> <span className="text">Continue with Facebook</span></a>
+                     <a href="" className="face"><img src={facebook} alt="" className='facebook-link'/> <span className="texts">Continue with Facebook</span></a>
 
                      <a href="" className="face-2"><img src={googlepic} alt="" className='facebook-link'/> <span className="text-2">Continue with Google</span></a>
 
-                     <a href="" className="face-3"><img src={apple} alt="" className='facebook-link'/> <span className="text">Continue with Apple</span></a>
+                     <a href="" className="face-3"><img src={apple} alt="" className='facebook-link'/> <span className="texts">Continue with Apple</span></a>
                  </div>
               </form>
 

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Rating.css";
-import activeStar from "../../assets/active-star.png"; // Yellow star image
-import inactiveStar from "../../assets/inactive-stars.png"; // Grey star image
+import activeStar from "../../assets/promotion/active-star.png"; // Yellow star image
+import inactiveStar from "../../assets/promotion/inactive-stars.png"; // Grey star image
 
 const Rating = ({ totalStars = 5 }) => {
   const [rating, setRating] = useState(0);

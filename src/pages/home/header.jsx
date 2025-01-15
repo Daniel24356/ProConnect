@@ -1,29 +1,48 @@
-  import zerd from "../../assets/zerds.png"
-  import './header.css'
-  import { RiArrowDropDownLine } from "react-icons/ri";
-  import { IoSearchOutline } from "react-icons/io5";
-  import { GrCycle } from "react-icons/gr";
-  import { FaRegHeart } from "react-icons/fa";
-  import { IoCartOutline } from "react-icons/io5";
-  import { FaRegUser } from "react-icons/fa";
-  import { FiHeadphones } from "react-icons/fi";
-  import { AiOutlineAppstore } from "react-icons/ai";
-import Nflag from "../../assets/icons8-nigeria-flag-48.png"
-import './header.css';
+import zerd from "../../assets/promotion/zerds.png"
+import Nflag from "../../assets/product-categories/icons8-nigeria-flag-48.png"
+import './header.css'
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoSearchOutline } from "react-icons/io5";
+import { GrCycle } from "react-icons/gr";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegUser } from "react-icons/fa";
+import { FiHeadphones } from "react-icons/fi";
+// import { FaFireAlt } from "react-icons/fa";
+import { AiOutlineAppstore } from "react-icons/ai";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { useEffect, useState } from "react";
-import icon1 from "../../assets/icon-1.png"
-import icon2 from "../../assets/icon-2.png"
-import icon3 from "../../assets/icon-3.png"
-import icon4 from "../../assets/icon-4.png"
-import icon5 from "../../assets/icon-5.png"
-import icon6 from "../../assets/icon-6.png"
-import icon7 from "../../assets/icon-7.png"
-import icon8 from "../../assets/icon-8.png"
-import icon9 from "../../assets/icon-9.png"
-import icon10 from "../../assets/icon-10.png"
+import icon1 from "../../assets/product-categories/icon-1.png"
+import icon2 from "../../assets/product-categories/icon-2.png"
+import icon3 from "../../assets/product-categories/icon-3.png"
+import icon4 from "../../assets/product-categories/icon-4.png"
+import icon5 from "../../assets/product-categories/icon-5.png"
+import icon6 from "../../assets/product-categories/icon-6.png"
+import icon7 from "../../assets/product-categories/icon-7.png"
+import icon8 from "../../assets/product-categories/icon-8.png"
+import icon9 from "../../assets/product-categories/icon-9.png"
+import icon10 from "../../assets/product-categories/icon-10.png"
+
+//   import zerd from "../../assets/zerds.png"
+  import './header.css'
+  
+// import Nflag from "../../assets/icons8-nigeria-flag-48.png"
+// import icon1 from "../../assets/icon-1.png"
+// import icon2 from "../../assets/icon-2.png"
+// import icon3 from "../../assets/icon-3.png"
+// import icon4 from "../../assets/icon-4.png"
+// import icon5 from "../../assets/icon-5.png"
+// import icon6 from "../../assets/icon-6.png"
+// import icon7 from "../../assets/icon-7.png"
+// import icon8 from "../../assets/icon-8.png"
+// import icon9 from "../../assets/icon-9.png"
+// import icon10 from "../../assets/icon-10.png"
 import { IoMenuSharp } from "react-icons/io5";
 import { useCart } from "react-use-cart";
+import { Link } from "react-router-dom";
+import { useWishlist } from "../../context/WishlistContext";
+import { useComparable } from "../../context/ComparableContext";
+
 
 const Header = () => {
 
@@ -49,6 +68,15 @@ const Header = () => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
+
+    const [isDropdownOpens, setIsDropdownOpens] = useState(false);
+    const toggleDropdowns = () => setIsDropdownOpens((prev) => !prev);
+
+    const {wishlist} = useWishlist();
+    const count = wishlist.length
+
+    const {comparable} = useComparable();
+    const count2 = comparable.length
 
      return (
         <>
@@ -104,22 +132,29 @@ const Header = () => {
                     <div className="thr-head">
                         <div className="com">
                             <GrCycle className="s-icons" />
-                            <p>Compare</p>
-                            <div className="three">3</div>
+                            <Link to="/comparable" className="cart-stuff">Compare</Link>
+                            <div className="three">{count2}</div>
                         </div>
                         <div className="wish">
                             <FaRegHeart className="s-icons" />
-                            <p>Wishlist</p>
-                            <div className="six">6</div>
+                            <Link to="/wishlist" className="cart-stuff">Wishlist</Link>
+                            <div className="six">{count}</div>
                         </div>
                         <div className="carts">
                             <IoCartOutline className="s-icons" />
-                            <p>Cart</p>
+                            {/* <p>Cart</p> */}
+                            <Link to="/cart" className="cart-stuff">Cart</Link>
                             <div className="two">{totalItems}</div>
                         </div>
                         <div className="acc">
                             <FaRegUser className="s-icons" />
-                            <p>Account</p>
+                            <Link onClick={toggleDropdowns} className="cart-stuff">Account</Link>
+                            {isDropdownOpens && (
+                              <div className="log-reg">
+                                <Link className="link-si" to="/login">Login</Link>
+                                <Link className="link-si" to="/signup">Register</Link>
+                              </div>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -217,14 +252,14 @@ const Header = () => {
                     <div className="brow-sec">
                         <div>
                             <div className="br-inner">
-                                <p className="home-sp">Home</p>
+                                <Link to="/" className="home-sp">Home</Link>
                                 {/* <RiArrowDropDownLine className="drop-icon" /> */}
                             </div>
                         </div>
 
                         <div className="shop">
                             <div className="shop-inner">
-                                <p>Shop</p>
+                                <Link to="/shop" className="home-sps">Shop</Link>
                                 <RiArrowDropDownLine className="drop-icon" />
                             </div>
                             <div className="shop-side">
@@ -237,7 +272,7 @@ const Header = () => {
 
                         <div className="shop">
                             <div className="shop-inner">
-                                <p>Vendors</p>
+                                <Link to="/Vendors" className="home-sps">Vendors</Link>
                                 <RiArrowDropDownLine className="drop-icon" />
                             </div>
                             <div className="shop-sides">
@@ -249,7 +284,7 @@ const Header = () => {
 
                         <div className="shop">
                             <div className="shop-inner">
-                                <p>Product</p>
+                                <Link to="/Product" className="home-sps">Product</Link>
                                 <RiArrowDropDownLine className="drop-icon" />
                             </div>
                             <div className="shop-sides">

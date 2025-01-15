@@ -13,7 +13,7 @@
     color: #253D4E;
 }
 
-.products {
+.productsq {
     font-weight: bold;
     font-size: 18px;
     padding-top: 10px;
@@ -46,7 +46,7 @@ table {
     border: 1px solid #B6B6B6;
 }
 
-td {
+.td {
     border-right: 1px solid #B6B6B6;
     border-bottom: 1px solid #B6B6B6;
     padding: 40px;
@@ -155,10 +155,11 @@ td {
   .trash {
     color: grey;
     text-decoration: none;
-    border-bottom: none;
+    border: none;
+    background-color: white;
   }
 
-  .second {
+  /* .second {
     border-bottom: none;
   }
 
@@ -168,7 +169,7 @@ td {
 
   .typeshi-new {
     border: none;
-  }
+  } */
 
   @media screen and (max-width: 995px){
     .overall {

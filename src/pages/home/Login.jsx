@@ -1,8 +1,11 @@
 import './Login.css'
 import login from '../../assets/login.png'
+import { Link } from 'react-router-dom'
+import Header from './header'
 const Login = () => {
   return (
     <>
+    <Header/>
       <section className="login-section">
           <div className="login-div">
               <img src={login} alt="" className="login-pic" />
@@ -10,7 +13,7 @@ const Login = () => {
               <form action="" className='formshi'>
               <div className="right-login">
                  <h1 className="my">Login</h1>
-                 <p className="create">Dont have an account? <a href="" className="one">Create here</a></p>
+                 <p className="create">Dont have an account? <div><Link className="one" to="/signup">Create Here</Link></div></p>
                  <input type="text" className="name" placeholder='Username or Email *'/>
                  <input type="text" className="name" placeholder='Password *'/>
                  <div className="checkbox-wrapper-46">

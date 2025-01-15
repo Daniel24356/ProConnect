@@ -15,6 +15,32 @@
 .cart-box p span{
     color: rgb(59, 183, 126);
 }
+
+.emp-cart{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.cart-boxs{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.cart-boxs h1{
+    font-size: 48px;
+    color: gb(37, 61, 78);
+    font-weight: 900;
+}
+.cart-boxs p{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(126, 126, 126);
+}
+.cart-boxs p span{
+    color: rgb(59, 183, 126);
+}
+
 .cart-bord{
     padding-bottom: 45px;
     border-bottom: 1px solid gainsboro;
@@ -93,13 +119,13 @@
     margin-top: 7px;
 }
 .unit-price{
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    color: rgb(126, 126, 126);
+    color: rgb(69, 68, 68);
 }
 .sub-total{
     color: rgb(59, 183, 126);
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
 }
 .num-prod{
@@ -116,6 +142,7 @@
 .dte-icons{
     font-size: 25px;
     color: rgb(126, 126, 126);
+    margin-left: 25px;
 }
 .num-prod p{
     font-size: 16px;
@@ -130,6 +157,7 @@
 .arr-grav{
     font-size: 15px;
     color: rgb(59, 183, 126);
+    cursor: pointer;
 }
 .pr-check{
     height: 240.198px;
@@ -183,6 +211,10 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+.check-txt{
+    text-decoration: none;
+    color: white;
 }
 .cont-shop{
     margin-top: 30px;

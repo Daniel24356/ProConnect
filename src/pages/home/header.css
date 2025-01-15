@@ -96,6 +96,13 @@
     font-weight: 700;
 }
 
+.cart-stuff {
+    color: rgb(122, 120, 120);
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
 .shop-txt {
     color: rgb(102, 187, 141);
     font-weight: 700;
@@ -179,7 +186,7 @@
 }
 .thr-head {
     display: flex;
-    gap: 27px;
+    gap: 23px;
 }
 
 .head-inner {
@@ -320,6 +327,29 @@
 .acc {
     display: flex;
     align-items: baseline;
+    position: relative;
+}
+
+.log-reg{
+    width: 120px;
+    height: 110px;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top: 45px;
+    left: -30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(235, 234, 234);
+    z-index: 100;
+    padding: 24px 10px;
+}
+
+.link-si{
+    text-decoration: none;
+    color: black;
 }
 
 .browse-cat {
@@ -400,8 +430,18 @@
     font-weight: 700;
 }
 
-.home-sp {
+.home-sp{
     padding-right: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.home-sps{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
 }
 
 .brow-sec div p:hover {

@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "name": "Field Roast Chao Cheese Creamy Original",
+      "price": 2.51,
+      "image": "./../assets/product1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dairy-Free Cheddar Slices",
+      "price": 3.25,
+      "image": "./../assets/product2.jpg"
+    },
+
+    {
+        "id": 3,
+        "name": "Bananas",
+        "price": 4.25,
+        "image": "./../assets/product4.jpg"
+      },
+
+      {
+        "id": 4,
+        "name": "Milk",
+        "price": 5.25,
+        "image": "./../assets/watermelon.jpg"
+      },
+
+      {
+        "id": 5,
+        "name": "Cheese",
+        "price": 6.25,
+        "image": "./../assets/seedbag1.jpg"
+      }
+  ]
+  

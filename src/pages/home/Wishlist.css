@@ -13,6 +13,10 @@
     color: #253D4E;
 }
 
+.main-table {
+  border: none;
+}
+
 .products {
     font-weight: bold;
     font-size: 18px;
@@ -25,7 +29,7 @@
 }
 
 .mainheading {
-    border: 1px solid #e9ecef;
+    /* border: 1px solid #e9ecef; */
     background-color: #ececec;
     /* column-span: all; */
 }
@@ -65,6 +69,10 @@ td {
     border-radius: 15px;
 }
 
+.img-td {
+  border-left: 1px solid #B6B6B6;
+}
+
 .link {
     color: #3BB77E;
     font-weight: bold;
@@ -100,7 +108,7 @@ td {
     cursor: pointer;
   }
 
-  .price {
+  .price-new {
     font-size: 40px;
     font-weight: bold;
     color: #3BB77E;
@@ -117,6 +125,7 @@ td {
     font-weight: bold;
     padding: 8px;
     border-radius: 7px;
+    font-size: 15px;
   }
 
   .todo {
@@ -130,6 +139,7 @@ td {
     padding-right: 15px;
     border-radius: 6px;
     transition: 0.3s;
+    border: none;
   }
 
   .todo:hover {
@@ -140,6 +150,7 @@ td {
     color: grey;
     text-align: right;
     padding-left: 60px;
+    font-size: 15px;
   }
 
   .main-table {
@@ -152,6 +163,7 @@ td {
     font-weight: bold;
     padding: 8px;
     border-radius: 7px;
+    font-size: 15px;
   }
 
   .todos {

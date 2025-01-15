@@ -1,7 +1,10 @@
    import './checkout.css'
-   import zerd from '../../assets/zerds.png'
-   import demo from '../../assets/icon-1.png'
-   import fruit from '../../assets/seedbag2.jpg';
+   import zerd from '../../assets/promotion/zerds.png'
+//    import demo from '../../assets/icon-1.png'
+   import fruit from '../../assets/promotion/seedbag2.jpg';
+   import activeStar from '../../assets/promotion/active-star.png'
+   import { GoPlus } from "react-icons/go";
+   import { FiMinus } from "react-icons/fi";
 
    const Checkout = () => {
       return (
@@ -15,43 +18,43 @@
               <p className='shipp-txt'>Shipping information</p>
               <p className='alr-txt'>Already have an account? <span>Login</span></p>
            
-            <div class="inputGroup">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">Full Name</label>
+            <div className="inputGroup">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">Full Name</label>
             </div>
 
             <div className='email-ph'>
-            <div class="inputGroups">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">Email</label>
+            <div className="inputGroups">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">Email</label>
             </div>
-            <div class="inputGroupss">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">Phone</label>
+            <div className="inputGroupss">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">Phone</label>
             </div>
             </div>
 
             <div>
-            <div class="inputGroup">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">Country</label>
+            <div className="inputGroup">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">Country</label>
             </div>
             </div>
 
             <div className='email-ph'>
-            <div class="inputGroupsss">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">State</label>
+            <div className="inputGroupsss">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">State</label>
             </div>
-            <div class="inputGroupsss">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">City</label>
+            <div className="inputGroupsss">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">City</label>
             </div>
             </div>
 
-            <div class="inputGroup">
-                <input type="text" required="" autocomplete="off"/>
-                <label for="name">Adress</label>
+            <div className="inputGroup">
+                <input type="text" required="" autoComplete="off"/>
+                <label htmlFor="name">Address</label>
             </div>
 
             <div className='reg-check'>
@@ -125,17 +128,24 @@
               <p className='prod-txt'>Product(s)</p>
               <div className='prod-div'>
                 <div className='demo-div'>
-                <img className='demo-img' src={demo} alt="" />
+                <img className='demo-img' src='https://nest.botble.com/storage/stores/1-800x800.png' alt="" />
                 <p>Go Pro</p>
                 </div>
                 <div className='star-divs'>
-                <img src="" alt="" />
+                    <div>
+                    <img src={activeStar} alt="" />
+                    <img src={activeStar} alt="" />
+                    <img src={activeStar} alt="" />
+                    <img src={activeStar} alt="" />
+                    <img src={activeStar} alt="" />
+                    </div>
                 <p>(60 Reviews)</p>
                 </div>                               
               </div>
               <div className='mid-prod'>
                 <div className='prod-img'>
                     <img src={fruit} alt="" />
+                    <div className='num-check'>1</div>
                 </div>
                 <div>
                     <div>
@@ -144,12 +154,12 @@
                     <p  className='weig-txt'>(Weight: 4KG, Boxes: 5 Boxes)</p>
                     </div>
                     <div className='nums-div'>
-                        {/* icons */}
+                        <FiMinus/>
                         6
-                        {/* icons */}
+                        <GoPlus/>
                     </div>
                 </div>
-                <p>$1,692.00</p>
+                <p className='price-s'>$1,692.00</p>
               </div>
               <p className='ship-txt'>Shipping method:</p>
               <div className='met-all'>

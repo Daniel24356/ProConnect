@@ -1,8 +1,8 @@
 import './home.css'
-import zerd from '../../assets/zerds.png';
-import apple from '../../assets/apple.jpg';
-import google from '../../assets/google.jpg';
-import visa from '../../assets/visa.png';
+import zerd from '../../assets/promotion/zerds.png';
+import apple from '../../assets/promotion/apple.jpg';
+import google from '../../assets/promotion/google.jpg';
+import visa from '../../assets/promotion/visa.png';
 import { CiLocationOn } from "react-icons/ci";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { FaRegPaperPlane } from "react-icons/fa";
