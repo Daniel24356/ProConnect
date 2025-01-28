@@ -1,0 +1,111 @@
+.main-dashboard-div {
+    width: 100%;
+    display: flex;
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 60px;
+}
+
+.left-dashboard-div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.important-link {
+    background-color: #3bb77e;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-right: 150px; */
+    border-radius: 8px;
+}
+
+.less-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 150px;
+    border-radius: 8px;
+    color: #4c4c4c;
+    border: 1px solid rgb(212, 212, 212);
+    transition: 0.3s;
+}
+
+.less-link:hover {
+color: #ffc107;
+}
+
+.right-dashboard-div {
+    width: 75%;
+}
+
+.pic {
+    width: 80px;
+    border-radius: 50px;
+}
+
+.the-profile-div {
+    position: relative;
+}
+
+.camera {
+    cursor: pointer;
+    background-color: #3bb77e;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.hello {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.details {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.top-right-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 1.5;
+}
+
+.orders {
+    font-size: 14px;
+    font-weight: 500;
+    color: #061c3e;
+}
+
+.browse {
+    font-size: 14px;
+    text-decoration: none;
+    color: #5a97fa;
+    font-weight: 500;
+}
+
+.no-orders {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #cff4fc;
+    padding: 20px;
+}
